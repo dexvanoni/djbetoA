@@ -13,17 +13,18 @@
           <th>Data de Criação</th>
           <th>Data de Edição</th>
           <th>Imagem</th>
+          <th>Ações</th>
         </tr></center>
       </thead>
       <tbody>
         @foreach ($edition as $editions)
           <tr>
             <th scope="row">{{ $editions->id }}</th>
-            <td style="width: 30%" >{{ date('d/m/Y H:i', strtotime($editions->created_at)) }}</td>
-            <td style="width: 30%" >{{ date('d/m/Y H:i', strtotime($editions->updated_at)) }}</td>
+            <td style="width: 30%" >{{ date('d/m/Y', strtotime($editions->created_at)) }}</td>
+            <td style="width: 30%" >{{ date('d/m/Y', strtotime($editions->updated_at)) }}</td>
             <td style="width: 20%" >
               <div class="thumbnail">
-                <img src="{!! url($caminho.$editions->img_about) !!}" style="heigth: 100%; width: 100%" alt="{!! url($caminho.$editions->img_about) !!}" rel="About ME">
+                <img src="{!! url($caminho.$editions->img_about) !!}" style="heigth: 100%; width: 100%" alt="aboutMe">
               </div>
             </td>
             <td style="width: 40%" >

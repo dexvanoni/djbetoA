@@ -11,10 +11,11 @@
   <title>{{ config('app.name', 'DJ Beto Andrade') }}</title>
 
   <!-- Styles -->
-  <link href="/css/jquery.dataTables.min.css" rel="stylesheet">
   <link href="/bst/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/bootstrap.css" />
-
+  <link href="/css/app.css" rel="stylesheet">
+  <script src="/bst/js/jquery-1.12.4.min.js"></script>
+  <script src="/bst/js/bootstrap.min.js"></script>
 
   <!-- Scripts -->
   <script>
@@ -45,7 +46,9 @@
 
         <div class="collapse navbar-collapse" id="app-navbar-collapse">
           <!-- Left Side Of Navbar -->
-
+          <ul class="nav navbar-nav">
+            &nbsp;
+          </ul>
 
           <!-- Right Side Of Navbar -->
           <ul class="nav navbar-nav navbar-right">
@@ -62,8 +65,8 @@
                 <ul class="dropdown-menu" role="menu">
                   <li>
                     <a href="{{ url('/logout') }}"
-                    onclick="event.getpreventDefault();
-                    document.getElementById('logout-form').submit();">
+                    onclick="event.preventDefault();
+                             document.getElementById('logout-form').submit();">
                     Logout
                   </a>
 
@@ -98,13 +101,7 @@
 </div>
 
 <!-- Scripts -->
-
-<script src="js/jquery.dataTables.min.js"></script>
-<script>
-$(document).ready(function(){
-  $('#pesquisa').DataTable();
-});
-</script>
+    <script src="/js/app.js"></script>
 <script src="/bst/js/bootstrap.js"></script>
 </body>
 </html>
