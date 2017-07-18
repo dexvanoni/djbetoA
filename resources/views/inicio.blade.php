@@ -82,7 +82,14 @@
 	<div class="col-sm-5 col-xs-12 col-sm-offset-1">
 	<div class="player">
 	<img src="/images/dj.png" class="graphics hidden-xs  animated fadeInRightBig" alt="dj"/>
-		<iframe allowtransparency="true" width="100%" height="170" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/327354789&amp;color=ff0000&amp;theme_color=000000&amp;auto_play=true&amp;hide_related=true&amp;show_artwork=false"></iframe>
+  @php
+// montando o link da playlist;
+    $parte1 = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/";
+    $numero = $editions->url_top;
+    $parte2 = "&amp;color=ff0000&amp;theme_color=000000&amp;auto_play=true&amp;hide_related=true&amp;show_artwork=false";
+    $link = $parte1.$numero.$parte2;
+  @endphp
+  		<iframe allowtransparency="true" width="100%" height="170" scrolling="no" frameborder="no" src="{!! $link !!}"></iframe>
     </div>
 	</div>
 
@@ -105,8 +112,8 @@
 <img src= {!! url($caminho.$editions->img_about) !!} class="img-responsive" alt="img-about"/>
 </div>
 <div class="col-lg-5 col-sm-8  col-xs-12">
-<p>Especializado em casamentos. Contudo, inclui em sua lista outros tipos de festas: 15 anos, formaturas, aniversários, confraternizações... Já tocou em vários eventos por Mato Grosso do Sul e também no interior de São Paulo e Goiás. Foi o DJ oficial do carnaval em Fátima do Sul (de onde é natural) por sete anos, e do Fátima Fest por quatro anos seguidos. Já atuou e atua nos principais buffets e salões de Campo Grande. É também editor de áudio há vinte e cinco anos.</p>
-<blockquote>Hoje, além dos eventos, também é DJ do programa de mixagem Planeta Mega e programador musical da MEGA 94 FM. Não abandonando a paixão por música em nenhum instante do seu dia.</blockquote>
+  <p>{{ $editions->msg_about }}</p>
+  <blockquote>{{ $editions->msg_about_donw }}</blockquote>
 </div>
 <div class="col-lg-3 visible-lg">
 <div class="fb-like-box" data-href="http://www.facebook.com/thebootstrapthemes" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" data-width="255"></div>
@@ -119,21 +126,21 @@
 <div id="album" class="releases spacer">
 <h3><span class="glyphicon glyphicon-music"></span> Album Releases</h3>
 <div class="row">
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="/images/joia.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Crazy Freso</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+	<div class="col-sm-3 col-xs-12"><div class="album"><img src="{!! url($caminho.$editions->f1) !!}" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>{{ $editions->t1 }}</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail1"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
 
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="/images/bN.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Crazy Freso</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+	<div class="col-sm-3 col-xs-12"><div class="album"><img src="{!! url($caminho.$editions->f2) !!}" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>{{ $editions->t2 }}</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail2"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
 
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="/images/2.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Crazy Freso</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+	<div class="col-sm-3 col-xs-12"><div class="album"><img src="{!! url($caminho.$editions->f3) !!}" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>{{ $editions->t3 }}</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail3"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
 
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="/images/bN2.png" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Crazy Freso</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+	<div class="col-sm-3 col-xs-12"><div class="album"><img src="{!! url($caminho.$editions->f4) !!}" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>{{ $editions->t4 }}</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail4"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
 
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="/images/123.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Crazy Freso</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+	<div class="col-sm-3 col-xs-12"><div class="album"><img src="{!! url($caminho.$editions->f5) !!}" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>{{ $editions->t5 }}</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail5"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
 
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="/images/bN3.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Crazy Freso</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+	<div class="col-sm-3 col-xs-12"><div class="album"><img src="{!! url($caminho.$editions->f6) !!}" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>{{ $editions->t6 }}</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail6"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
 
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="/images/3.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Crazy Freso</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+	<div class="col-sm-3 col-xs-12"><div class="album"><img src="{!! url($caminho.$editions->f7) !!}" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>{{ $editions->t7 }}</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail7"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
 
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="/images/123.jpg" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>Crazy Freso</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+	<div class="col-sm-3 col-xs-12"><div class="album"><img src="{!! url($caminho.$editions->f8) !!}" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>{{ $editions->t8 }}</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail8"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
 </div>
 </div>
 <!-- latest release ends-->
@@ -319,21 +326,77 @@
 
 
   <!-- Modal -->
-  <div class="modal fade" id="albumdetail" tabindex="-1" role="dialog">
+  <div class="modal fade" id="albumdetail1" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
-
-
-
-  <h2>Crazy Fresco</h2>
-  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/24314082&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
-
-
+  <h2></h2>
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $editions->u1 }}&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
+  <div class="modal fade" id="albumdetail2" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  <h2></h2>
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $editions->u2 }}&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
+  <div class="modal fade" id="albumdetail3" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  <h2></h2>
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $editions->u3 }}&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade" id="albumdetail4" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  <h2></h2>
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $editions->u4 }}&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade" id="albumdetail5" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  <h2></h2>
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $editions->u5 }}&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade" id="albumdetail6" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  <h2></h2>
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $editions->u6 }}&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade" id="albumdetail7" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  <h2></h2>
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $editions->u7 }}&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+  <div class="modal fade" id="albumdetail8" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  <h2></h2>
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $editions->u8 }}&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
     <script src="http://code.jquery.com/jquery-1.7.1.min.js" type="text/javascript" ></script>
     <!-- boostrap -->
