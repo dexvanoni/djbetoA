@@ -32,5 +32,8 @@ Route::get('volta',[
 ]);
 
 Route::get('/adm',['as' => 'adm', 'uses' => 'HomeController@index']);
+Route::group(['middleware' => 'auth'], function() {
 
-Route::resource('editar', 'EditionController', ['except' => 'show']);
+  Route::resource('editar', 'EditionController', ['except' => 'show']);
+
+});

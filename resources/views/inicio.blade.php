@@ -227,11 +227,18 @@
   <!--Blog Events Ends-->
 
   <!-- playlist Starts -->
+  @php
+    // montando o link da playlist;
+    $parte1_down = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/";
+    $numero_down = $editions->url_down;
+    $parte2_down = "&amp;theme_color=ff0000&amp;color=ff0000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false";
+    $link_down = $parte1_down.$numero_down.$parte2_down;
+  @endphp
   <div id="playlist" class="spacer">
   	<div class="row">
   					<div class="col-md-12 col-xs-12">
   					<h3><span class="glyphicon glyphicon-list"></span> Playlist</h3>
-  					<iframe width="100%" height="400" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/5937672&amp;theme_color=ff0000&amp;color=ff0000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+  					<iframe width="100%" height="400" scrolling="no" frameborder="no" src="{!! $link_down !!}"></iframe>
             </div>
   	</div>
   </div>

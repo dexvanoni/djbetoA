@@ -184,7 +184,7 @@ class EditionController extends Controller
     if (Input::file('f2_b')){
 
       $f2_b = Input::file('f2_b');
-      $ext_f2_b = $img_f2_b-> getClientOriginalExtension();
+      $ext_f2_b = $f2_b-> getClientOriginalExtension();
       if($ext_f2_b != 'jpg' && $ext_f2_b != 'png' && $ext_f2_b != 'JPG' && $ext_f2_b != 'JPEG' && $ext_f2_b != 'jpeg'){
         return back()->with('erro', 'Erro: Este arquivo não é uma imagem válida! Somente .JPG ou .PNG');
       }
@@ -193,7 +193,7 @@ class EditionController extends Controller
     if (Input::file('f3_b')){
 
       $f3_b = Input::file('f3_b');
-      $ext_f3_b = $img_f3_b-> getClientOriginalExtension();
+      $ext_f3_b = $f3_b-> getClientOriginalExtension();
       if($ext_f3_b != 'jpg' && $ext_f3_b != 'png' && $ext_f3_b != 'JPG' && $ext_f3_b != 'JPEG' && $ext_f3_b != 'jpeg'){
         return back()->with('erro', 'Erro: Este arquivo não é uma imagem válida! Somente .JPG ou .PNG');
       }
@@ -202,7 +202,7 @@ class EditionController extends Controller
     if (Input::file('f4_b')){
 
       $f4_b = Input::file('f4_b');
-      $ext_f4_b = $img_f4_b-> getClientOriginalExtension();
+      $ext_f4_b = $f4_b-> getClientOriginalExtension();
       if($ext_f4_b != 'jpg' && $ext_f4_b != 'png' && $ext_f4_b != 'JPG' && $ext_f4_b != 'JPEG' && $ext_f4_b != 'jpeg'){
         return back()->with('erro', 'Erro: Este arquivo não é uma imagem válida! Somente .JPG ou .PNG');
       }

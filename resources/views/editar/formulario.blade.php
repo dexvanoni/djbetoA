@@ -1,6 +1,6 @@
 
 <script language="Javascript">
-var limite=390;
+var limite=600;
 
 function soma() {
 
@@ -29,7 +29,7 @@ function mostra_tamanho(){
   document.form1.exibe2.value=limite;
 }
 // limitar o textarea do texto 2
-var limite2=232;
+var limite2=300;
 
 function soma2() {
 
