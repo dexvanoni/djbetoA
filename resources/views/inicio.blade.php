@@ -112,8 +112,8 @@
 <img src= {!! url($caminho.$editions->img_about) !!} class="img-responsive" alt="img-about"/>
 </div>
 <div class="col-lg-5 col-sm-8  col-xs-12">
-  <p>{{ $editions->msg_about }}</p>
-  <blockquote>{{ $editions->msg_about_donw }}</blockquote>
+  <p> {!! $editions->msg_about !!} </p>
+  <blockquote>{!! $editions->msg_about_donw !!}</blockquote>
 </div>
 <div class="col-lg-3 visible-lg">
 <div class="fb-like-box" data-href="http://www.facebook.com/thebootstrapthemes" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" data-width="255"></div>

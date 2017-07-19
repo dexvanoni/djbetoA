@@ -1,4 +1,63 @@
 // ABOUT ME
+<script language="Javascript">
+var limite=390;
+
+function soma() {
+
+  var mais_um=eval(document.form1.msg_about.value.length-1);
+  mais_um++;
+
+  if (document.form1.msg_about.value.length>limite)
+  {
+    document.form1.msg_about.value='';
+    document.form1.msg_about.value=valor_limite;
+    alert("Você deve digitar no máximo "+limite+" caracteres");
+  }
+  else
+  {
+    document.form1.exibe.value='';
+    document.form1.exibe.value=eval(mais_um);
+    valor_limite=document.form1.msg_about.value;
+    document.form1.exibe2.value='';
+    document.form1.exibe2.value=(limite-mais_um);
+  }
+
+  document.form1.msg_about.focus();
+}
+
+function mostra_tamanho(){
+  document.form1.exibe2.value=limite;
+}
+// limitar o textarea do texto 2
+var limite2=232;
+
+function soma2() {
+
+  var mais_um2=eval(document.form1.msg_about_donw.value.length-1);
+  mais_um2++;
+
+  if (document.form1.msg_about_donw.value.length>limite2)
+  {
+    document.form1.msg_about_donw.value='';
+    document.form1.msg_about_donw.value=valor_limite2;
+    alert("Você deve digitar no máximo "+limite2+" caracteres");
+  }
+  else
+  {
+    document.form1.exibe3.value='';
+    document.form1.exibe3.value=eval(mais_um2);
+    valor_limite2=document.form1.msg_about_donw.value;
+    document.form1.exibe4.value='';
+    document.form1.exibe4.value=(limite2-mais_um2);
+  }
+
+  document.form1.msg_about_donw.focus();
+}
+
+function mostra_tamanho2(){
+  document.form1.exibe4.value=limit2;
+}
+</script>
 
 <div class="form-group">
   <label for="img_about">Imagem de "About Me"</label>
@@ -6,13 +65,21 @@
 </div>
 
 <div class="form-group">
-  <label for="img_about">Texto de "About Me"</label><br>
-  <textarea name="msg_about" id="msg_about" rows="4" cols="50"></textarea>
+  <label for="msg_about">Texto de "About Me"</label><br>
+  <textarea name="msg_about" id="msg_about" rows="4" cols="50" onKeyPress="soma(this.value)" onKeyUp="soma(this.value)"></textarea><br>
+  Caracteres digitados:
+  <input style="border:none" name="exibe" type="text" class="formulario" value="0" size="2">
+  Caracteres restantes:
+  <input style="border:none" name="exibe2" type="text" class="formulario" size="2">
 </div>
 
 <div class="form-group">
-  <label for="img_about">Texto em foco "About Me"</label><br>
-  <textarea name="msg_about_donw" id="msg_about_donw" rows="4" cols="50"></textarea>
+  <label for="msg_about_donw">Texto em foco "About Me"</label><br>
+  <textarea name="msg_about_donw" id="msg_about_donw" rows="4" cols="50" onKeyPress="soma2(this.value)" onKeyUp="soma2(this.value)"></textarea><br>
+  Caracteres digitados:
+  <input style="border:none" name="exibe3" type="text" class="formulario" value="0" size="2">
+  Caracteres restantes:
+  <input style="border:none" name="exibe4" type="text" class="formulario" size="2">
 </div>
 <hr>
 // PLAYLIST DO TOPO

@@ -84,10 +84,11 @@
   <br>
   <div class="container">
     <div class="pull-right">
-      <a href="{{ route('volta') }}" class="btn btn-primary"> Voltar</a>
+      <a href="{{ route('volta') }}" class="btn btn-primary"> Voltar para o site</a>
     </div>
+    <br>
     <div class="row">
-      <div class="col-md-8 col-md-offset-2">
+      <div class="col-md-9 col-md-offset-2">
         <div class="panel panel-default">
           <div class="panel-heading">Administração</div>
 
