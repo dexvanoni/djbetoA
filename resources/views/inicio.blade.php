@@ -109,7 +109,7 @@
 <h3><span class="glyphicon glyphicon-user"></span> About Me</h3>
 <div class="row">
 <div class="col-lg-4 col-sm-4  col-xs-12">
-<img src= {!! url($caminho.$editions->img_about) !!} class="img-responsive" alt="img-about"/>
+<img src="{!! url($caminho.$editions->img_about) !!}" class="img-responsive" alt="img-about"/>
 </div>
 <div class="col-lg-5 col-sm-8  col-xs-12">
   <p> {!! $editions->msg_about !!} </p>
@@ -156,30 +156,30 @@
 		<ul>
 			<li>
 			<div class="row">
-				<div class="col-xs-12 col-sm-3 col-lg-4"><a href="#" data-toggle="modal" data-target="#blogdetail"><img src="/images/1.jpg" class="img-responsive" alt="music theme" /></a></div>
-				<div class="col-xs-12  col-sm-6 col-lg-5 "><h5><a href="#" data-toggle="modal" data-target="#blogdetail">Christmas Eve Party</a></h5><p>Typewriter photo booth vinyl post-ironic, literally keffiyeh locavore tofu lomo pug Odd Future.</p></div>
-				<div class="col-xs-12  col-sm-3 col-lg-3 date"><b>2014</b><span>Dec 28</span></div>
+				<div class="col-xs-12 col-sm-3 col-lg-4"><a href="#" data-toggle="modal" data-target="#eventdetail1"><img src="{!! url($caminho.$editions->f1_e) !!}" class="img-responsive" alt="music theme" /></a></div>
+				<div class="col-xs-12  col-sm-6 col-lg-5 "><h5><a href="#" data-toggle="modal" data-target="#eventdetail1">{!! $editions->t1_e !!}</a></h5><p>{!! $editions->s1_e !!}</p></div>
+				<div class="col-xs-12  col-sm-3 col-lg-3 date"><b>{!! $editions->ano1_e !!}</b><span>{!! $editions->diames1_e !!}</span></div>
 			</div>
 			</li>
       <li>
   			<div class="row">
-  				<div class="col-xs-12 col-sm-3 col-lg-4"><a href="#" data-toggle="modal" data-target="#blogdetail"><img src="/images/2.jpg" class="img-responsive" alt="music theme" /></a></div>
-  				<div class="col-xs-12  col-sm-6 col-lg-5 "><h5><a href="#" data-toggle="modal" data-target="#blogdetail">Christmas Eve Party</a></h5><p>Typewriter photo booth vinyl post-ironic, literally keffiyeh locavore tofu lomo pug Odd Future.</p></div>
-  				<div class="col-xs-12  col-sm-3 col-lg-3 date"><b>2014</b><span>Dec 28</span></div>
+  				<div class="col-xs-12 col-sm-3 col-lg-4"><a href="#" data-toggle="modal" data-target="#eventdetail2"><img src="{!! url($caminho.$editions->f2_e) !!}" class="img-responsive" alt="music theme" /></a></div>
+  				<div class="col-xs-12  col-sm-6 col-lg-5 "><h5><a href="#" data-toggle="modal" data-target="#eventdetail2">{!! $editions->t2_e !!}</a></h5><p>{!! $editions->s2_e !!}</p></div>
+  				<div class="col-xs-12  col-sm-3 col-lg-3 date"><b>{!! $editions->ano2_e !!}</b><span>{!! $editions->diames2_e !!}</span></div>
   			</div>
   			</li>
   			<li>
   			<div class="row">
-  				<div class="col-xs-12 col-sm-3 col-lg-4"><a href="#" data-toggle="modal" data-target="#blogdetail"><img src="/images/3.jpg" class="img-responsive" alt="music theme" /></a></div>
-  				<div class="col-xs-12  col-sm-6 col-lg-5 "><h5><a href="#" data-toggle="modal" data-target="#blogdetail">Christmas Eve Party</a></h5><p>Typewriter photo booth vinyl post-ironic, literally keffiyeh locavore tofu lomo pug Odd Future.</p></div>
-  				<div class="col-xs-12  col-sm-3 col-lg-3 date"><b>2014</b><span>Dec 28</span></div>
+  				<div class="col-xs-12 col-sm-3 col-lg-4"><a href="#" data-toggle="modal" data-target="#eventdetail3"><img src="{!! url($caminho.$editions->f3_e) !!}" class="img-responsive" alt="music theme" /></a></div>
+  				<div class="col-xs-12  col-sm-6 col-lg-5 "><h5><a href="#" data-toggle="modal" data-target="#eventdetail3">{!! $editions->t3_e !!}</a></h5><p>{!! $editions->s3_e !!}</p></div>
+  				<div class="col-xs-12  col-sm-3 col-lg-3 date"><b>{!! $editions->ano3_e !!}</b><span>{!! $editions->diames3_e !!}</span></div>
   			</div>
   			</li>
   			<li>
   			<div class="row">
-  				<div class="col-xs-12 col-sm-3 col-lg-4"><a href="#" data-toggle="modal" data-target="#blogdetail"><img src="/images/4.jpg" class="img-responsive" alt="music theme" /></a></div>
-  				<div class="col-xs-12  col-sm-6 col-lg-5 "><h5><a href="#" data-toggle="modal" data-target="#blogdetail">Christmas Eve Party</a></h5><p>Typewriter photo booth vinyl post-ironic, literally keffiyeh locavore tofu lomo pug Odd Future.</p></div>
-  				<div class="col-xs-12  col-sm-3 col-lg-3 date"><b>2014</b><span>Dec 28</span></div>
+  				<div class="col-xs-12 col-sm-3 col-lg-4"><a href="#" data-toggle="modal" data-target="#eventdetail4"><img src="{!! url($caminho.$editions->f4_e) !!}" class="img-responsive" alt="music theme" /></a></div>
+  				<div class="col-xs-12  col-sm-6 col-lg-5 "><h5><a href="#" data-toggle="modal" data-target="#eventdetail4">{!! $editions->t4_e !!}</a></h5><p>{!! $editions->s4_e !!}</p></div>
+  				<div class="col-xs-12  col-sm-3 col-lg-3 date"><b>{!! $editions->ano4_e !!}</b><span>{!! $editions->diames4_e !!}</span></div>
   			</div>
   			</li>
   	</ul>
@@ -192,28 +192,28 @@
   		<div class="ourblog">
   		<h3><span class="glyphicon glyphicon-book"></span> Blog</h3>
               <ul class="row">
-                <li class="row"><a href="#" data-toggle="modal" data-target="#blogdetail" class="col-xs-12 col-sm-3 col-lg-4"><img src="/images/3.jpg" class="img-responsive" alt="music theme" /></a>
-                <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#blogdetail">New trends in music</a></h5>
-                <small>Posted on: Jan 1, 2014</small>
-                <p>Typewriter photo booth vinyl post-ironic, literally keffiyeh locavore tofu lomo pug Odd Future. </p>
+                <li class="row"><a href="#" data-toggle="modal" data-target="#blogdetail1" class="col-xs-12 col-sm-3 col-lg-4"><img src="{!! url($caminho.$editions->f1_b) !!}" class="img-responsive" alt="music theme" /></a>
+                <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#blogdetail">{!! $editions->t1_b !!}</a></h5>
+                <small>Postado em: {{ date('d/m/Y H:i', strtotime($editions->updated_at)) }}</small>
+                <p>{!! $editions->s1_b !!}</p>
                 </div>
                 </li>
-                <li class="row"><a href="#" data-toggle="modal" data-target="#blogdetail" class="col-xs-12 col-sm-3 col-lg-4"><img src="/images/4.jpg" class="img-responsive" alt="music theme" /></a>
-                <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#blogdetail">New trends in music</a></h5>
-                <small>Posted on: Jan 1, 2014</small>
-                <p>Typewriter photo booth vinyl post-ironic, literally keffiyeh locavore tofu lomo pug Odd Future. </p>
+                <li class="row"><a href="#" data-toggle="modal" data-target="#blogdetail2" class="col-xs-12 col-sm-3 col-lg-4"><img src="{!! url($caminho.$editions->f2_b) !!}" class="img-responsive" alt="music theme" /></a>
+                <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#blogdetail">{!! $editions->t2_b !!}</a></h5>
+                <small>Postado em: {{ date('d/m/Y H:i', strtotime($editions->updated_at)) }}</small>
+                <p>{!! $editions->s2_b !!}</p>
                 </div>
                 </li>
-                <li class="row"><a href="#" data-toggle="modal" data-target="#blogdetail" class="col-xs-12 col-sm-3 col-lg-4"><img src="/images/1.jpg" class="img-responsive" alt="music theme" /></a>
-                <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#blogdetail">New trends in music</a></h5>
-                <small>Posted on: Jan 1, 2014</small>
-                <p>Typewriter photo booth vinyl post-ironic, literally keffiyeh locavore tofu lomo pug Odd Future. </p>
+                <li class="row"><a href="#" data-toggle="modal" data-target="#blogdetail3" class="col-xs-12 col-sm-3 col-lg-4"><img src="{!! url($caminho.$editions->f3_b) !!}" class="img-responsive" alt="music theme" /></a>
+                <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#blogdetail">{!! $editions->t3_b !!}</a></h5>
+                <small>Postado em: {{ date('d/m/Y H:i', strtotime($editions->updated_at)) }}</small>
+                <p>{!! $editions->s3_b !!}</p>
                 </div>
                 </li>
-                 <li class="row"><a href="#" data-toggle="modal" data-target="#blogdetail" class="col-xs-12 col-sm-3 col-lg-4"><img src="/images/2.jpg" class="img-responsive" alt="music theme" /></a>
-                <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#blogdetail">New trends in music</a></h5>
-                <small>Posted on: Jan 1, 2014</small>
-                <p>Typewriter photo booth vinyl post-ironic, literally keffiyeh locavore tofu lomo pug Odd Future. </p>
+                 <li class="row"><a href="#" data-toggle="modal" data-target="#blogdetail4" class="col-xs-12 col-sm-3 col-lg-4"><img src="{!! url($caminho.$editions->f4_b) !!}" class="img-responsive" alt="music theme" /></a>
+                <div class="blogtext col-xs-12 col-sm-9  col-lg-8"><h5><a href="#" data-toggle="modal" data-target="#blogdetail">{!! $editions->t4_b !!}</a></h5>
+                <small>Postado em: {{ date('d/m/Y H:i', strtotime($editions->updated_at)) }}</small>
+                <p>{!! $editions->s4_b !!} </p>
                 </div>
                 </li>
               </ul>
@@ -275,7 +275,7 @@
   <!-- Footer Starts -->
   <div id="footer">
   <div class="container">
-  Copyright 2017 DJ BETO ANDRADE - Development Denis Vanoni tel.(67)99122-4547 <a href="{{ route('adm') }}">Administration</a>
+  Copyright 2017 DJ BETO ANDRADE | Development Denis Vanoni tel.(67)99122-4547 | <a href="{{ route('adm') }}">Administration</a>
   </div>
   </div>
   <!-- # Footer Ends -->
@@ -292,45 +292,178 @@
   <!-- background slider -->
 
   <!-- Modal -->
-  <div class="modal fade" id="blogdetail" tabindex="-1" role="dialog">
+
+  <!--detalhes dos BLOGS-->
+    <!--BLOG 1-->
+  <div class="modal fade" id="blogdetail1" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-
-
-  <div id="blog">
-  <h2>New trends in music</h2>
-  <small>Posted on: Jan 20, 2013</small>
-
-        <a href="#" class="thumbnail"><img src="/images/1.jpg" class="img-reponsive" alt="blog" /></a>
-
-        <div class="col-lg-8 col-lg-offset-2">
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-        </div>
-
-
-  </div>
-
-
+            <div id="blog">
+            <h2>{!! $editions->t1_b !!}</h2>
+            <small>Postado em: {{ date('d/m/Y H:i', strtotime($editions->updated_at)) }}</small>
+                  <a href="#" class="thumbnail"><img src="{!! url($caminho.$editions->f1_b) !!}" class="img-reponsive" alt="blog" /></a>
+                  <div class="col-lg-8 col-lg-offset-2">
+                    <p>{!! $editions->hist1_b !!}</p>
+                  </div>
+            </div>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
 
+  <!--BLOG 2-->
+<div class="modal fade" id="blogdetail2" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div id="blog">
+          <h2>{!! $editions->t2_b !!}</h2>
+          <small>Postado em: {{ date('d/m/Y H:i', strtotime($editions->updated_at)) }}</small>
+                <a href="#" class="thumbnail"><img src="{!! url($caminho.$editions->f2_b) !!}" class="img-reponsive" alt="blog" /></a>
+                <div class="col-lg-8 col-lg-offset-2">
+                  <p>{!! $editions->hist2_b !!}</p>
+                </div>
+          </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
+<!--BLOG 3-->
+<div class="modal fade" id="blogdetail3" tabindex="-1" role="dialog">
+<div class="modal-dialog">
+  <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <div id="blog">
+        <h2>{!! $editions->t3_b !!}</h2>
+        <small>Postado em: {{ date('d/m/Y H:i', strtotime($editions->updated_at)) }}</small>
+              <a href="#" class="thumbnail"><img src="{!! url($caminho.$editions->f3_b) !!}" class="img-reponsive" alt="blog" /></a>
+              <div class="col-lg-8 col-lg-offset-2">
+                <p>{!! $editions->hist3_b !!}</p>
+              </div>
+        </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
+<!--BLOG 4-->
+<div class="modal fade" id="blogetail4" tabindex="-1" role="dialog">
+<div class="modal-dialog">
+  <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <div id="blog">
+        <h2>{!! $editions->t4_b !!}</h2>
+        <small>Postado em: {{ date('d/m/Y H:i', strtotime($editions->updated_at)) }}</small>
+              <a href="#" class="thumbnail"><img src="{!! url($caminho.$editions->f4_b) !!}" class="img-reponsive" alt="blog" /></a>
+              <div class="col-lg-8 col-lg-offset-2">
+                <p>{!! $editions->hist4_b !!}</p>
+              </div>
+        </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!-- FIM DOS BLOGS-->
 
+<!--#######################################################################################-->
 
+  <!--detalhes dos eventos-->
+    <!--EVENTO 1-->
+  <div class="modal fade" id="eventdetail1" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <div id="blog">
+            <h2>{!! $editions->t1_e !!}</h2>
+            <small>Postado em: {{ date('d/m/Y H:i', strtotime($editions->updated_at)) }}</small>
+                  <a href="#" class="thumbnail"><img src="{!! url($caminho.$editions->f1_e) !!}" class="img-reponsive" alt="blog" /></a>
+                  <div class="col-lg-8 col-lg-offset-2">
+                    <p>{!! $editions->hist1_e !!}</p>
+                  </div>
+            </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
 
+  <!--EVENTO 2-->
+<div class="modal fade" id="eventdetail2" tabindex="-1" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+          <div id="blog">
+          <h2>{!! $editions->t2_e !!}</h2>
+          <small>Postado em: {{ date('d/m/Y H:i', strtotime($editions->updated_at)) }}</small>
+                <a href="#" class="thumbnail"><img src="{!! url($caminho.$editions->f2_e) !!}" class="img-reponsive" alt="blog" /></a>
+                <div class="col-lg-8 col-lg-offset-2">
+                  <p>{!! $editions->hist2_e !!}</p>
+                </div>
+          </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
+<!--EVENTO 3-->
+<div class="modal fade" id="eventdetail3" tabindex="-1" role="dialog">
+<div class="modal-dialog">
+  <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <div id="blog">
+        <h2>{!! $editions->t3_e !!}</h2>
+        <small>Postado em: {{ date('d/m/Y H:i', strtotime($editions->updated_at)) }}</small>
+              <a href="#" class="thumbnail"><img src="{!! url($caminho.$editions->f3_e) !!}" class="img-reponsive" alt="blog" /></a>
+              <div class="col-lg-8 col-lg-offset-2">
+                <p>{!! $editions->hist3_e !!}</p>
+              </div>
+        </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!--EVENTO 4-->
+<div class="modal fade" id="eventdetail4" tabindex="-1" role="dialog">
+<div class="modal-dialog">
+  <div class="modal-content">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <div id="blog">
+        <h2>{!! $editions->t4_e !!}</h2>
+        <small>Postado em: {{ date('d/m/Y H:i', strtotime($editions->updated_at)) }}</small>
+              <a href="#" class="thumbnail"><img src="{!! url($caminho.$editions->f4_e) !!}" class="img-reponsive" alt="blog" /></a>
+              <div class="col-lg-8 col-lg-offset-2">
+                <p>{!! $editions->hist4_e !!}</p>
+              </div>
+        </div>
+  </div><!-- /.modal-content -->
+</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<!-- FIM DOS EVENTOS-->
+
+  @php
+// montando o link das músicas;
+    $parte_1 = "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/";
+    $parte_2 = "&amp;theme_color=000000amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false";
+    $numero_1 = $editions->u1;
+    $numero_2 = $editions->u2;
+    $numero_3 = $editions->u3;
+    $numero_4 = $editions->u4;
+    $numero_5 = $editions->u5;
+    $numero_6 = $editions->u6;
+    $numero_7 = $editions->u7;
+    $numero_8 = $editions->u8;
+    $link_1 = $parte_1.$numero_1.$parte_2;
+    $link_2 = $parte_1.$numero_2.$parte_2;
+    $link_3 = $parte_1.$numero_3.$parte_2;
+    $link_4 = $parte_1.$numero_4.$parte_2;
+    $link_5 = $parte_1.$numero_5.$parte_2;
+    $link_6 = $parte_1.$numero_6.$parte_2;
+    $link_7 = $parte_1.$numero_7.$parte_2;
+    $link_8 = $parte_1.$numero_8.$parte_2;
+  @endphp
 
   <!-- Modal -->
   <div class="modal fade" id="albumdetail1" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   <h2></h2>
-  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $editions->u1 }}&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="{{ $link_1 }}"></iframe>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
@@ -339,7 +472,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
   <h2></h2>
-  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $editions->u2 }}&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="{{ $link_2 }}"></iframe>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
@@ -348,7 +481,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
   <h2></h2>
-  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $editions->u3 }}&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="{{ $link_3 }}"></iframe>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
@@ -357,7 +490,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
   <h2></h2>
-  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $editions->u4 }}&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="{{ $link_4 }}"></iframe>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
@@ -366,7 +499,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
   <h2></h2>
-  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $editions->u5 }}&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="{{ $link_5 }}"></iframe>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
@@ -375,7 +508,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
   <h2></h2>
-  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $editions->u6 }}&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="{{ $link_6 }}"></iframe>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
@@ -384,7 +517,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
   <h2></h2>
-  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $editions->u7 }}&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="{{ $link_7 }}"></iframe>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->
@@ -393,7 +526,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
   <h2></h2>
-  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/{{ $editions->u8 }}&amp;theme_color=000000&amp;color=ff5500&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=false"></iframe>
+  <iframe width="100%" height="450" scrolling="no" frameborder="no" src="{{ $link_8 }}"></iframe>
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal -->

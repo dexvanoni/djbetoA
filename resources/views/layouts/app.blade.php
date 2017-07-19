@@ -23,6 +23,68 @@
     'csrfToken' => csrf_token(),
   ]); ?>
   </script>
+  <script type="text/javascript">
+  $(document).read(function(){
+    $('#botoes').show();
+    $('#aboutme').hide();
+    $('#settop').hide();
+    $('#albumrelease').hide();
+    $('#events').hide();
+    $('#blogs').hide();
+    $('#playlistdown').hide();
+  });
+
+  // campos extras para justificativa
+
+  $("#bt_aboutme").click(function(){
+    $('#aboutme').show();
+    $('#settop').hide();
+    $('#albumrelease').hide();
+    $('#events').hide();
+    $('#blogs').hide();
+    $('#playlistdown').hide();
+  });
+  $("#bt_settop").click(function(){
+    $('#aboutme').hide();
+    $('#settop').show();
+    $('#albumrelease').hide();
+    $('#events').hide();
+    $('#blogs').hide();
+    $('#playlistdown').hide();
+  });
+  $("#bt_albumrelease").click(function(){
+    $('#aboutme').hide();
+    $('#settop').hide();
+    $('#albumrelease').show();
+    $('#events').hide();
+    $('#blogs').hide();
+    $('#playlistdown').hide();
+  });
+  $("#bt_events").click(function(){
+    $('#aboutme').hide();
+    $('#settop').hide();
+    $('#albumrelease').hide();
+    $('#events').show();
+    $('#blogs').hide();
+    $('#playlistdown').hide();
+  });
+  $("#bt_blogs").click(function(){
+    $('#aboutme').hide();
+    $('#settop').hide();
+    $('#albumrelease').hide();
+    $('#events').hide();
+    $('#blogs').show();
+    $('#playlistdown').hide();
+  });
+  $("#bt_playlistdown").click(function(){
+    $('#aboutme').hide();
+    $('#settop').hide();
+    $('#albumrelease').hide();
+    $('#events').hide();
+    $('#blogs').hide();
+    $('#playlistdown').show();
+  });
+  </script>
 </head>
 <body>
   <div id="app">
@@ -84,7 +146,7 @@
   <br>
   <div class="container">
     <div class="pull-right">
-      <a href="{{ route('volta') }}" class="btn btn-primary"> Voltar para o site</a>
+      <a href="{{ route('volta') }}" class="btn btn-primary"><span class="glyphicon glyphicon-headphones"></span> Site</a>
     </div>
     <br>
     <div class="row">

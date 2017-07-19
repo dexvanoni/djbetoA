@@ -17,7 +17,10 @@ Route::get('/', function () {
 });
 */
 
-Route::get('/', 'EditionController@site');
+Route::get('/',[
+  'as'=>'inicial',
+  'uses'=>'EditionController@site'
+  ]);
 
 Auth::routes();
 

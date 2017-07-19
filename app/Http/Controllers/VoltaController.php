@@ -7,6 +7,8 @@ use Illuminate\Http\Request;
 class VoltaController extends Controller
 {
   public function volta(){
-    return view('inicio');
+
+    return redirect()->route('inicial');
   }
+
 }
