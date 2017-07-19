@@ -1,4 +1,4 @@
-// ABOUT ME
+
 <script language="Javascript">
 var limite=390;
 
@@ -301,56 +301,59 @@ function mostra_tamanho4_b(){
 <div id="botoes">
   <div class="row">
     <div class="col-md-12">
-      <div class="col-md-2 col-md-offset-1">
-        <button type="button" name="button" id="bt_aboutme"><span class="glyphicon glyphicon-headphones"></span> About-Me</button>
+      <div class="col-md-2">
+        <center><a href="#" class="btn btn-primary" id="bt_aboutme"><span class="glyphicon glyphicon-user"></span> About-Me</a></center>
       </div>
-      <div class="col-md-2 col-md-offset-1">
-        <a href="#" class="btn btn-primary" id="bt_settop"><span class="glyphicon glyphicon-headphones"></span> SetMusic</a>
+      <div class="col-md-2">
+        <center><a href="#" class="btn btn-primary" id="bt_settop"><span class="glyphicon glyphicon-volume-up"></span> SetMusic</a></center>
       </div>
-      <div class="col-md-2 col-md-offset-1">
-        <a href="#" class="btn btn-primary" id="bt_albumrelease"><span class="glyphicon glyphicon-headphones"></span> Album Release</a>
+      <div class="col-md-2">
+        <center><a href="#" class="btn btn-primary" id="bt_albumrelease"><span class="glyphicon glyphicon-th"></span> Album Release</a></center>
       </div>
-      <div class="col-md-2 col-md-offset-1">
-        <a href="#" class="btn btn-primary" id="bt_events"><span class="glyphicon glyphicon-headphones"></span> Events</a>
+      <div class="col-md-2">
+        <center><a href="#" class="btn btn-primary" id="bt_events"><span class="glyphicon glyphicon-calendar"></span> Events</a></center>
       </div>
-      <div class="col-md-2 col-md-offset-1">
-        <a href="#" class="btn btn-primary" id="bt_blogs"><span class="glyphicon glyphicon-headphones"></span> Blog</a>
+      <div class="col-md-2">
+        <center><a href="#" class="btn btn-primary" id="bt_blogs"><span class="glyphicon glyphicon-thumbs-up"></span> Blog</a></center>
       </div>
-      <div class="col-md-2 col-md-offset-1">
-        <a href="#" class="btn btn-primary" id="bt_playlistdown"><span class="glyphicon glyphicon-headphones"></span> Playlist</a>
+      <div class="col-md-2">
+        <center><a href="#" class="btn btn-primary" id="bt_playlistdown"><span class="glyphicon glyphicon-equalizer"></span> Playlist</a></center>
       </div>
     </div>
   </div>
 </div>
-
+<hr>
 <div id="aboutme">
-  <div class="form-group">
-    <label for="img_about">Imagem de "About Me"</label>
-    <input type="file" name="img_about" id="img_about">
+  <div class="col-md-12 col-md-offset-3">
+    // ABOUT ME
+    <div class="form-group">
+      <label for="img_about">Imagem de "About Me"</label>
+      <input type="file" name="img_about" id="img_about">
+    </div>
+
+    <div class="form-group">
+      <label for="msg_about">Texto de "About Me"</label><br>
+      <textarea name="msg_about" id="msg_about" rows="4" cols="50" onKeyPress="soma(this.value)" onKeyUp="soma(this.value)"></textarea><br>
+      Caracteres digitados:
+      <input style="border:none" name="exibe" type="text" class="formulario" value="0" size="2">
+      Caracteres restantes:
+      <input style="border:none" name="exibe2" type="text" class="formulario" size="2">
+    </div>
+
+    <div class="form-group">
+      <label for="msg_about_donw">Texto em foco "About Me"</label><br>
+      <textarea name="msg_about_donw" id="msg_about_donw" rows="4" cols="50" onKeyPress="soma2(this.value)" onKeyUp="soma2(this.value)"></textarea><br>
+      Caracteres digitados:
+      <input style="border:none" name="exibe3" type="text" class="formulario" value="0" size="2">
+      Caracteres restantes:
+      <input style="border:none" name="exibe4" type="text" class="formulario" size="2">
+    </div>
   </div>
 
-  <div class="form-group">
-    <label for="msg_about">Texto de "About Me"</label><br>
-    <textarea name="msg_about" id="msg_about" rows="4" cols="50" onKeyPress="soma(this.value)" onKeyUp="soma(this.value)"></textarea><br>
-    Caracteres digitados:
-    <input style="border:none" name="exibe" type="text" class="formulario" value="0" size="2">
-    Caracteres restantes:
-    <input style="border:none" name="exibe2" type="text" class="formulario" size="2">
-  </div>
-
-  <div class="form-group">
-    <label for="msg_about_donw">Texto em foco "About Me"</label><br>
-    <textarea name="msg_about_donw" id="msg_about_donw" rows="4" cols="50" onKeyPress="soma2(this.value)" onKeyUp="soma2(this.value)"></textarea><br>
-    Caracteres digitados:
-    <input style="border:none" name="exibe3" type="text" class="formulario" value="0" size="2">
-    Caracteres restantes:
-    <input style="border:none" name="exibe4" type="text" class="formulario" size="2">
-  </div>
-  <hr>
 </div>
 
 
-<div class="settop">
+<div id="settop">
   // SET MUSIC DO TOPO
   <div class="form-group">
     <label for="url_top">SetMusic do Topo</label><br>
@@ -360,7 +363,7 @@ function mostra_tamanho4_b(){
 </div>
 
 
-<div class="albumrelease">
+<div id="albumrelease">
   // ALBUM RELEASES
 
   <div class="row">
@@ -467,7 +470,7 @@ function mostra_tamanho4_b(){
   <hr>
 </div>
 
-<div class="events">
+<div id="events">
   // EVENTS
   <div class="row">
     <div class="col-md-12">
@@ -475,8 +478,8 @@ function mostra_tamanho4_b(){
         <div class="form-group">
           <label for="f1_e">Foto do Primeiro Evento</label>
           <input type="file" name="f1_e" id="f1_e">
-          <label for="t1_e">Título do primeiro Evento</label>
-          <input type="text" name="t1_e" id="t1_e" size="33" maxlength="30">
+          <label for="t1_e">Título do primeiro Evento</label><br>
+          <input type="text" name="t1_e" id="t1_e" size="33" maxlength="30"><br>
           <label for="s1_e">Texto do primeiro Evento</label><br>
           <textarea name="s1_e" id="s1_e" rows="2" cols="33" onKeyPress="soma1_e(this.value)" onKeyUp="soma1_e(this.value)"></textarea><br>
           Caracteres digitados:
@@ -499,8 +502,8 @@ function mostra_tamanho4_b(){
         <div class="form-group">
           <label for="f2_e">Foto do Segundo Evento</label>
           <input type="file" name="f2_e" id="f2_e">
-          <label for="t2_e">Título do segundo Evento</label>
-          <input type="text" name="t2_e" id="t2_e" size="33">
+          <label for="t2_e">Título do segundo Evento</label><br>
+          <input type="text" name="t2_e" id="t2_e" size="33"><br>
           <label for="s2_e">Texto do segundo Evento</label><br>
           <textarea name="s2_e" id="s2_e" rows="2" cols="33" onKeyPress="soma2_e(this.value)" onKeyUp="soma2_e(this.value)"></textarea><br>
           Caracteres digitados:
@@ -529,8 +532,8 @@ function mostra_tamanho4_b(){
         <div class="form-group">
           <label for="f3_e">Foto do Terceiro Evento</label>
           <input type="file" name="f3_e" id="f3_e">
-          <label for="t3_e">Título do terceiro Evento</label>
-          <input type="text" name="t3_e" id="t3_e" size="35">
+          <label for="t3_e">Título do terceiro Evento</label><br>
+          <input type="text" name="t3_e" id="t3_e" size="35"><br>
           <label for="s3_e">Texto do terceiro Evento</label><br>
           <textarea name="s3_e" id="s3_e" rows="2" cols="33" onKeyPress="soma3_e(this.value)" onKeyUp="soma3_e(this.value)"></textarea><br>
           Caracteres digitados:
@@ -553,8 +556,8 @@ function mostra_tamanho4_b(){
         <div class="form-group">
           <label for="f4_e">Foto do Quarto Evento</label>
           <input type="file" name="f4_e" id="f4_e">
-          <label for="t4_e">Título do quarto Evento</label>
-          <input type="text" name="t4_e" id="t4_e" size="33">
+          <label for="t4_e">Título do quarto Evento</label><br>
+          <input type="text" name="t4_e" id="t4_e" size="33"><br>
           <label for="s4_e">Texto do quarto Evento</label><br>
           <textarea name="s4_e" id="s4_e" rows="2" cols="33" onKeyPress="soma4_e(this.value)" onKeyUp="soma4_e(this.value)"></textarea><br>
           Caracteres digitados:
@@ -578,7 +581,7 @@ function mostra_tamanho4_b(){
   <hr>
 </div>
 
-<div class="blogs">
+<div id="blogs">
   // BLOG
   <div class="row">
     <div class="col-md-12">
@@ -586,8 +589,8 @@ function mostra_tamanho4_b(){
         <div class="form-group">
           <label for="f1_b">Foto do Primeiro Blog</label>
           <input type="file" name="f1_b" id="f1_b">
-          <label for="t1_b">Título do primeiro Blog</label>
-          <input type="text" name="t1_b" id="t1_b" size="33" maxlength="30">
+          <label for="t1_b">Título do primeiro Blog</label><br>
+          <input type="text" name="t1_b" id="t1_b" size="33" maxlength="30"><br>
           <label for="s1_b">Texto do primeiro Blog</label><br>
           <textarea name="s1_b" id="s1_b" rows="2" cols="33" onKeyPress="soma1_b(this.value)" onKeyUp="soma1_b(this.value)"></textarea><br>
           Caracteres digitados:
@@ -602,8 +605,8 @@ function mostra_tamanho4_b(){
         <div class="form-group">
           <label for="f2_b">Foto do Segundo Blog</label>
           <input type="file" name="f2_b" id="f2_b">
-          <label for="t2_b">Título do segundo Blog</label>
-          <input type="text" name="t2_b" id="t2_b" size="33">
+          <label for="t2_b">Título do segundo Blog</label><br>
+          <input type="text" name="t2_b" id="t2_b" size="33"><br>
           <label for="s2_b">Texto do segundo Blog</label><br>
           <textarea name="s2_b" id="s2_b" rows="2" cols="33" onKeyPress="soma2_b(this.value)" onKeyUp="soma2_b(this.value)"></textarea><br>
           Caracteres digitados:
@@ -624,8 +627,8 @@ function mostra_tamanho4_b(){
         <div class="form-group">
           <label for="f3_b">Foto do Terceiro Blog</label>
           <input type="file" name="f3_b" id="f3_b">
-          <label for="t3_b">Título do terceiro Blog</label>
-          <input type="text" name="t3_b" id="t3_b" size="35">
+          <label for="t3_b">Título do terceiro Blog</label><br>
+          <input type="text" name="t3_b" id="t3_b" size="35"><br>
           <label for="s3_b">Texto do terceiro Blog</label><br>
           <textarea name="s3_b" id="s3_b" rows="2" cols="33" onKeyPress="soma3_b(this.value)" onKeyUp="soma3_b(this.value)"></textarea><br>
           Caracteres digitados:
@@ -640,8 +643,8 @@ function mostra_tamanho4_b(){
         <div class="form-group">
           <label for="f4_b">Foto do Quarto Blog</label>
           <input type="file" name="f4_b" id="f4_b">
-          <label for="t4_b">Título do quarto Blog</label>
-          <input type="text" name="t4_b" id="t4_b" size="33">
+          <label for="t4_b">Título do quarto Blog</label><br>
+          <input type="text" name="t4_b" id="t4_b" size="33"><br>
           <label for="s4_b">Texto do quarto Blog</label><br>
           <textarea name="s4_b" id="s4_b" rows="2" cols="33" onKeyPress="soma4_b(this.value)" onKeyUp="soma4_b(this.value)"></textarea><br>
           Caracteres digitados:
@@ -658,7 +661,7 @@ function mostra_tamanho4_b(){
 </div>
 
 
-<div class="playlistdown">
+<div id="playlistdown">
   // PLAYLIST PRINCIPAL
   <div class="form-group">
     <label for="url_down">Playlist principal</label><br>
@@ -667,5 +670,7 @@ function mostra_tamanho4_b(){
   <hr>
 </div>
 
-<input type="hidden" name="_token" value="{!! csrf_token() !!}">
-<button type="submit" class="btn btn-success">Salvar</button>
+<div id="bt_submit">
+  <input type="hidden" name="_token" value="{!! csrf_token() !!}">
+  <button type="submit" class="btn btn-success">Salvar</button>
+</div>
