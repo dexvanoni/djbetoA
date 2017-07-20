@@ -563,7 +563,7 @@ function mostra_tamanho4_b(){
           Caracteres digitados:
           <input style="border:none" name="exibe4_e" type="text" class="formulario" value="0" size="2">
           Caracteres restantes:
-          <input style="border:none" name="exibe24_e" type="text" class="formulario" size="2">
+          <input style="border:none" name="exibe24_e" type="text" class="formulario" size="2"><br>
           <label for="hist4_e">História do Quarto Evento</label><br>
           <textarea name="hist4_e" id="hist4_e" rows="2" cols="33"></textarea><br>
           <div class="col-md-3">
@@ -634,7 +634,7 @@ function mostra_tamanho4_b(){
           Caracteres digitados:
           <input style="border:none" name="exibe3_b" type="text" class="formulario" value="0" size="2">
           Caracteres restantes:
-          <input style="border:none" name="exibe23_b" type="text" class="formulario" size="2">
+          <input style="border:none" name="exibe23_b" type="text" class="formulario" size="2"><br>
           <label for="hist3_b">História do Terceiro Blog</label><br>
           <textarea name="hist3_b" id="hist3_b" rows="2" cols="33"></textarea><br>
         </div>
@@ -650,7 +650,7 @@ function mostra_tamanho4_b(){
           Caracteres digitados:
           <input style="border:none" name="exibe4_b" type="text" class="formulario" value="0" size="2">
           Caracteres restantes:
-          <input style="border:none" name="exibe24_b" type="text" class="formulario" size="2">
+          <input style="border:none" name="exibe24_b" type="text" class="formulario" size="2"><br>
           <label for="hist4_b">História do Quarto Blog</label><br>
           <textarea name="hist4_b" id="hist4_b" rows="2" cols="33"></textarea><br>
         </div>

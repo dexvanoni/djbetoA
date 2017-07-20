@@ -353,7 +353,7 @@
 </div><!-- /.modal -->
 
 <!--BLOG 4-->
-<div class="modal fade" id="blogetail4" tabindex="-1" role="dialog">
+<div class="modal fade" id="blogdetail4" tabindex="-1" role="dialog">
 <div class="modal-dialog">
   <div class="modal-content">
       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>

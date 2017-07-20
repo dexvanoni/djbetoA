@@ -53,6 +53,25 @@ class EditionController extends Controller
 
   }
 
+  public function edit($id){
+
+    $edition = Edition::find($id);
+
+    return view('editar.edit', compact('edition'));
+
+    }
+
+    public function update(Request $request, $id){
+
+      $edition = Edition::find($id);
+
+      $data = $request->all();
+      $edition->fill($data)->save();
+
+      return redirect()->route('editar.index');
+
+    }
+
   public function store(Request $request){
 
     if (Input::file('img_about')){
