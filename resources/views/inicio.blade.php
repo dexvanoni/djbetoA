@@ -9,17 +9,27 @@
 
 	<link rel="stylesheet" href="/animate.css">
 	<link rel="stylesheet" href="/style.css">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 
 </head>
 <body>
 
 
-<div id="fb-root"></div>
+{{-- <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&appId=249078091804020&version=v2.0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script> --}}
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.10";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
@@ -115,9 +125,10 @@
   <p> {!! $editions->msg_about !!} </p>
   <blockquote>{!! $editions->msg_about_donw !!}</blockquote>
 </div>
-<div class="col-lg-3 visible-lg">
+
+<!--<div class="col-lg-3 visible-lg">
 <div class="fb-like-box" data-href="http://www.facebook.com/thebootstrapthemes" data-colorscheme="dark" data-show-faces="true" data-header="false" data-stream="false" data-show-border="false" data-width="255"></div>
-</div>
+</div>-->
 </div>
 </div>
 <!-- About Ends -->
@@ -126,22 +137,107 @@
 <div id="album" class="releases spacer">
 <h3><span class="glyphicon glyphicon-music"></span> Album Releases</h3>
 <div class="row">
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="{!! url($caminho.$editions->f1) !!}" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>{{ $editions->t1 }}</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail1"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+	<div class="col-sm-3 col-xs-12">
+    <div class="album">
+      <img src="{!! url($caminho.$editions->f1) !!}" class="img-responsive" alt="music theme" />
+      <div class="albumdetail">
+        <h5>{{ $editions->t1 }}</h5>
+        <a href="#" class="listen" data-toggle="modal" data-target="#albumdetail1">
+          <span class="glyphicon glyphicon-headphones"></span> Listen Song
+        </a>
+      </div>
+    </div>
+  </div>
 
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="{!! url($caminho.$editions->f2) !!}" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>{{ $editions->t2 }}</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail2"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+	<div class="col-sm-3 col-xs-12">
+    <div class="album">
+      <img src="{!! url($caminho.$editions->f2) !!}" class="img-responsive" alt="music theme" />
+      <div class="albumdetail">
+        <h5>{{ $editions->t2 }}</h5>
+        <a href="#" class="listen" data-toggle="modal" data-target="#albumdetail2">
+          <span class="glyphicon glyphicon-headphones"></span> Listen Song
+        </a>
+      </div>
+    </div>
+  </div>
 
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="{!! url($caminho.$editions->f3) !!}" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>{{ $editions->t3 }}</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail3"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+	<div class="col-sm-3 col-xs-12">
+    <div class="album">
+      <img src="{!! url($caminho.$editions->f3) !!}" class="img-responsive" alt="music theme" />
+      <div class="albumdetail">
+        <h5>{{ $editions->t3 }}</h5>
+        <a href="#" class="listen" data-toggle="modal" data-target="#albumdetail3">
+          <span class="glyphicon glyphicon-headphones"></span> Listen Song
+        </a>
+      </div>
+      </div>
+    </div>
 
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="{!! url($caminho.$editions->f4) !!}" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>{{ $editions->t4 }}</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail4"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
-
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="{!! url($caminho.$editions->f5) !!}" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>{{ $editions->t5 }}</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail5"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
-
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="{!! url($caminho.$editions->f6) !!}" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>{{ $editions->t6 }}</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail6"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
-
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="{!! url($caminho.$editions->f7) !!}" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>{{ $editions->t7 }}</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail7"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
-
-	<div class="col-sm-3 col-xs-12"><div class="album"><img src="{!! url($caminho.$editions->f8) !!}" class="img-responsive" alt="music theme" /><div class="albumdetail"><h5>{{ $editions->t8 }}</h5><a href="#" class="listen" data-toggle="modal" data-target="#albumdetail8"><span class="glyphicon glyphicon-headphones"></span> Listen Song</a></div></div></div>
+	<div class="col-sm-3 col-xs-12">
+    <div class="album">
+      <img src="{!! url($caminho.$editions->f4) !!}" class="img-responsive" alt="music theme" />
+      <div class="albumdetail">
+        <h5>{{ $editions->t4 }}</h5>
+        <a href="#" class="listen" data-toggle="modal" data-target="#albumdetail4">
+          <span class="glyphicon glyphicon-headphones"></span> Listen Song
+        </a>
+      </div>
+    </div>
+  </div>
 </div>
+<div class="row">
+	<div class="col-sm-3 col-xs-12">
+    <div class="album">
+      <img src="{!! url($caminho.$editions->f5) !!}" class="img-responsive" alt="music theme" />
+      <div class="albumdetail">
+        <h5>{{ $editions->t5 }}</h5>
+        <a href="#" class="listen" data-toggle="modal" data-target="#albumdetail5">
+          <span class="glyphicon glyphicon-headphones"></span> Listen Song
+        </a>
+      </div>
+    </div>
+  </div>
+
+	<div class="col-sm-3 col-xs-12">
+    <div class="album">
+      <img src="{!! url($caminho.$editions->f6) !!}" class="img-responsive" alt="music theme" />
+      <div class="albumdetail">
+        <h5>{{ $editions->t6 }}</h5>
+        <a href="#" class="listen" data-toggle="modal" data-target="#albumdetail6">
+          <span class="glyphicon glyphicon-headphones"></span> Listen Song
+        </a>
+      </div>
+    </div>
+  </div>
+
+	<div class="col-sm-3 col-xs-12">
+    <div class="album">
+      <img src="{!! url($caminho.$editions->f7) !!}" class="img-responsive" alt="music theme" />
+      <div class="albumdetail">
+        <h5>{{ $editions->t7 }}</h5>
+        <a href="#" class="listen" data-toggle="modal" data-target="#albumdetail7">
+          <span class="glyphicon glyphicon-headphones"></span> Listen Song
+        </a>
+      </div>
+    </div>
+  </div>
+
+	<div class="col-sm-3 col-xs-12">
+    <div class="album">
+      <img src="{!! url($caminho.$editions->f8) !!}" class="img-responsive" alt="music theme" />
+      <div class="albumdetail">
+        <h5>{{ $editions->t8 }}</h5>
+        <a href="#" class="listen" data-toggle="modal" data-target="#albumdetail8">
+          <span class="glyphicon glyphicon-headphones"></span> Listen Song
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+
 </div>
 <!-- latest release ends-->
 
@@ -260,9 +356,27 @@
 
 
   <!-- map -->
-  <div class="map clearfix">
-  <div class="fb-like-box" data-href="https://www.facebook.com/thebootstrapthemes" data-width="100%" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+<div class="row">
+  <div class="col-md-12">
+    <div class="col-xs-2 col-xs-offset-1">
+<br><br>
+      <a href="https://www.instagram.com/djbetoandrade/" target="_blank"><img style="width: 40px; heigth: 40px" src="/insta.png" /></a>
+      <a href="https://www.facebook.com/djbeto.andrade/" target="_blank"><img style="width: 40px; heigth: 40px" src="/face.png" /></a>
+    </div>
   </div>
+</div>
+
+<div class="map clearfix">
+  <div class="pull-right">
+  <div class="fb-share-button" data-href="https://www.facebook.com/djbeto.andrade" data-layout="button" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.facebook.com%2Fdjbeto.andrade&amp;src=sdkpreparse">Compartilhar</a></div>
+  <div class="fb-follow" data-href="https://www.facebook.com/djbeto.andrade" data-layout="button" data-size="large" data-show-faces="true"></div>
+  </div>
+
+</div>
+
+  {{-- <div class="map clearfix">
+  <div class="fb-like-box" data-href="https://www.facebook.com/thebootstrapthemes" data-width="100%" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="true"></div>
+  </div> --}}
   <!-- map -->
 
   </div>
