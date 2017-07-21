@@ -2,6 +2,15 @@
 
 @section('content')
 
+
+@if (isset($maisdeum))
+  <div class="alert alert-info">
+    @php
+      echo nl2br($maisdeum);
+    @endphp
+  </div>
+@endif
+
 @php
   $caminho = '/images/';
 @endphp
@@ -34,7 +43,7 @@
                   </li>
                 <li>|</li>
                 <li title="Excluir">
-                  <form action="{{ route('editar.destroy', ['edition' => $editions->id]) }}" onsubmit="return confirm('Tem certeza que deseja excluir?'); return false;" method="post">
+                  <form action="{{ route('editar.destroy', ['edition' => $editions->id]) }}" onsubmit="return confirm('  Cuidado ao excluir edições! \nTem certeza que deseja fazer isso?'); return false;" method="post">
                     {{ csrf_field() }}
                     {{ method_field('DELETE') }}
                     <button type="submit" class="btn btn-danger btn-sm"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></button>

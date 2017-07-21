@@ -154,8 +154,15 @@
   </nav>
   <br>
   <div class="container">
-    <div class="pull-right">
-      <a href="{{ route('volta') }}" class="btn btn-primary"><span class="glyphicon glyphicon-headphones"></span> Site</a><br><br>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="col-md-2 col-md-offset-1">
+            <a href="{{ route('editar.index') }}" class="btn btn-danger"><span class="glyphicon glyphicon-cog"></span> Index</a><br><br>
+        </div>
+        <div class="col-md-2 col-md-offset-7">
+            <a href="{{ route('volta') }}" class="btn btn-danger"><span class="glyphicon glyphicon-headphones"></span> Site</a><br><br>
+        </div>
+      </div>
     </div>
 
     <div class="row">

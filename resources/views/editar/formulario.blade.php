@@ -328,12 +328,13 @@ function mostra_tamanho4_b(){
     // ABOUT ME
     <div class="form-group">
       <label for="img_about">Imagem de "About Me"</label>
-      <input type="file" name="img_about" id="img_about">
+      {!! Form::file('img_about', null, array('id' => 'img_about')) !!}
     </div>
 
     <div class="form-group">
       <label for="msg_about">Texto de "About Me"</label><br>
-      <textarea name="msg_about" id="msg_about" rows="4" cols="50" onKeyPress="soma(this.value)" onKeyUp="soma(this.value)"></textarea><br>
+      {!! Form::textarea('msg_about', null, array('rows'=>'4', 'cols'=>'50', 'onKeyPress'=>'soma(this.value)',  'onKeyUp'=>'soma(this.value)')) !!}
+      <br>
       Caracteres digitados:
       <input style="border:none" name="exibe" type="text" class="formulario" value="0" size="2">
       Caracteres restantes:
@@ -342,7 +343,8 @@ function mostra_tamanho4_b(){
 
     <div class="form-group">
       <label for="msg_about_donw">Texto em foco "About Me"</label><br>
-      <textarea name="msg_about_donw" id="msg_about_donw" rows="4" cols="50" onKeyPress="soma2(this.value)" onKeyUp="soma2(this.value)"></textarea><br>
+      {!! Form::textarea('msg_about_donw', null, array('rows'=>'4', 'cols'=>'50', 'onKeyPress'=>'soma2(this.value)',  'onKeyUp'=>'soma2(this.value)')) !!}
+      <br>
       Caracteres digitados:
       <input style="border:none" name="exibe3" type="text" class="formulario" value="0" size="2">
       Caracteres restantes:
@@ -357,7 +359,7 @@ function mostra_tamanho4_b(){
   // SET MUSIC DO TOPO
   <div class="form-group">
     <label for="url_top">SetMusic do Topo</label><br>
-    <input type="text" name="url_top" placeholder="Colar o número do SET do SoundClound" size="70">
+    {{ Form::text('url_top', null, array('placeholder'=>'Colar o número do SET do SoundClound', 'size'=>'70')) }}
   </div>
   <hr>
 </div>
@@ -371,21 +373,27 @@ function mostra_tamanho4_b(){
       <div class="col-md-6">
         <div class="form-group">
           <label for="f1">Primeira Imagem de "Album Releases"</label>
-          <input type="file" name="f1" id="f1">
+          {!! Form::file('f1', null, array('id' => 'f1')) !!}
+
           <label for="f1">Título da Primeira Imagem de "Album Releases"</label>
-          <input type="text" name="t1" id="t1" size="35">
+          {!! Form::text('t1', null, array('id' => 't1', 'size'=>'35')) !!}
+
           <label title="Colar o link do SoundClound" for="f1">Música da Primeira Imagem de "Album Releases"</label>
-          <input type="text" name="u1" id="u1" placeholder="Colar o número da música do SoundClound" size="35">
+          {!! Form::text('u1', null, array('id' => 'u1', 'size'=>'35', 'placeholder'=>'Colar o número da música do SoundClound')) !!}
+
         </div>
       </div>
       <div class="col-md-6">
         <div class="form-group">
           <label for="f2">Segunda Imagem de "Album Releases"</label>
-          <input type="file" name="f2" id="f2">
+          {!! Form::file('f2', null, array('id' => 'f2')) !!}
+
           <label for="f2">Título da Segunda Imagem de "Album Releases"</label>
-          <input type="text" name="t2" id="t2" size="35">
+          {!! Form::text('t2', null, array('id' => 't2', 'size'=>'35')) !!}
+
           <label title="Colar o link do SoundClound" for="f2">Música da Segunda Imagem de "Album Releases"</label>
-          <input type="text" name="u2" id="u2" placeholder="Colar o número da música do SoundClound" size="35">
+          {!! Form::text('u2', null, array('id' => 'u2', 'size'=>'35', 'placeholder'=>'Colar o número da música do SoundClound')) !!}
+
         </div>
       </div>
     </div>
@@ -396,21 +404,27 @@ function mostra_tamanho4_b(){
       <div class="col-md-6">
         <div class="form-group">
           <label for="img_about">Terceira Imagem de "Album Releases"</label>
-          <input type="file" name="f3" id="f3">
+          {!! Form::file('f3', null, array('id' => 'f3')) !!}
+
           <label for="f3">Título da Terceira Imagem de "Album Releases"</label>
-          <input type="text" name="t3" id="t3" size="35">
+          {!! Form::text('t3', null, array('id' => 't3', 'size'=>'35')) !!}
+
           <label title="Colar o link do SoundClound" for="f2">Música da Terceira Imagem de "Album Releases"</label>
-          <input type="text" name="u3" id="u3" placeholder="Colar o número da música do SoundClound" size="35">
+          {!! Form::text('u3', null, array('id' => 'u3', 'size'=>'35', 'placeholder'=>'Colar o número da música do SoundClound')) !!}
+
         </div>
       </div>
       <div class="col-md-6">
         <div class="form-group">
           <label for="img_about">Quarta Imagem de "Album Releases"</label>
-          <input type="file" name="f4" id="f4">
+          {!! Form::file('f4', null, array('id' => 'f4')) !!}
+
           <label for="f4">Título da Quarta Imagem de "Album Releases"</label>
-          <input type="text" name="t4" id="t4" size="35">
+          {!! Form::text('t4', null, array('id' => 't4', 'size'=>'35')) !!}
+
           <label title="Colar o link do SoundClound" for="f2">Música da Quarta Imagem de "Album Releases"</label>
-          <input type="text" name="u4" id="u4" placeholder="Colar o número da música do SoundClound" size="35">
+          {!! Form::text('u4', null, array('id' => 'u4', 'size'=>'35', 'placeholder'=>'Colar o número da música do SoundClound')) !!}
+
         </div>
       </div>
     </div>
@@ -422,21 +436,27 @@ function mostra_tamanho4_b(){
       <div class="col-md-6">
         <div class="form-group">
           <label for="img_about">Quinta Imagem de "Album Releases"</label>
-          <input type="file" name="f5" id="f5">
+          {!! Form::file('f5', null, array('id' => 'f5')) !!}
+
           <label for="f5">Título da Quinta Imagem de "Album Releases"</label>
-          <input type="text" name="t5" id="t5" size="35">
+          {!! Form::text('t5', null, array('id' => 't5', 'size'=>'35')) !!}
+
           <label title="Colar o link do SoundClound" for="f2">Música da Quinta Imagem de "Album Releases"</label>
-          <input type="text" name="u5" id="u5" placeholder="Colar o número da música do SoundClound" size="35">
+          {!! Form::text('u5', null, array('id' => 'u5', 'size'=>'35', 'placeholder'=>'Colar o número da música do SoundClound')) !!}
+
         </div>
       </div>
       <div class="col-md-6">
         <div class="form-group">
           <label for="img_about">Sexta Imagem de "Album Releases"</label>
-          <input type="file" name="f6" id="f6">
+          {!! Form::file('f6', null, array('id' => 'f6')) !!}
+
           <label for="f6">Título da Sexta Imagem de "Album Releases"</label>
-          <input type="text" name="t6" id="t6" size="35">
+          {!! Form::text('t6', null, array('id' => 't6', 'size'=>'35')) !!}
+
           <label title="Colar o link do SoundClound" for="f2">Música da Sexta Imagem de "Album Releases"</label>
-          <input type="text" name="u6" id="u6" placeholder="Colar o número da música do SoundClound" size="35">
+          {!! Form::text('u6', null, array('id' => 'u6', 'size'=>'35', 'placeholder'=>'Colar o número da música do SoundClound')) !!}
+
         </div>
       </div>
     </div>
@@ -448,21 +468,27 @@ function mostra_tamanho4_b(){
       <div class="col-md-6">
         <div class="form-group">
           <label for="img_about">Sétima Imagem de "Album Releases"</label>
-          <input type="file" name="f7" id="f7">
+          {!! Form::file('f7', null, array('id' => 'f7')) !!}
+
           <label for="f7">Título da Sétima Imagem de "Album Releases"</label>
-          <input type="text" name="t7" id="t7" size="35">
+          {!! Form::text('t7', null, array('id' => 't7', 'size'=>'35')) !!}
+
           <label title="Colar o link do SoundClound" for="f2">Música da Sétima Imagem de "Album Releases"</label>
-          <input type="text" name="u7" id="u7" placeholder="Colar o número da música do SoundClound" size="35">
+          {!! Form::text('u7', null, array('id' => 'u7', 'size'=>'35', 'placeholder'=>'Colar o número da música do SoundClound')) !!}
+
         </div>
       </div>
       <div class="col-md-6">
         <div class="form-group">
           <label for="img_about">Oitava Imagem de "Album Releases"</label>
-          <input type="file" name="f8" id="f8">
+          {!! Form::file('f8', null, array('id' => 'f8')) !!}
+
           <label for="f8">Título da Oitava Imagem de "Album Releases"</label>
-          <input type="text" name="t8" id="t8" size="35">
+          {!! Form::text('t8', null, array('id' => 't8', 'size'=>'35')) !!}
+
           <label title="Colar o link do SoundClound" for="f2">Música da Oitava Imagem de "Album Releases"</label>
-          <input type="text" name="u8" id="u8" placeholder="Colar o número da música do SoundClound" size="35">
+          {!! Form::text('u8', null, array('id' => 'u8', 'size'=>'35', 'placeholder'=>'Colar o número da música do SoundClound')) !!}
+
         </div>
       </div>
     </div>
@@ -477,48 +503,60 @@ function mostra_tamanho4_b(){
       <div class="col-md-6">
         <div class="form-group">
           <label for="f1_e">Foto do Primeiro Evento</label>
-          <input type="file" name="f1_e" id="f1_e">
+          {!! Form::file('f1_e', null, array('id' => 'f1_e')) !!}
+
           <label for="t1_e">Título do primeiro Evento</label><br>
-          <input type="text" name="t1_e" id="t1_e" size="33" maxlength="30"><br>
+          {!! Form::text('t1_e', null, array('id' => 't1_e', 'size'=>'33', 'maxlength'=>'30')) !!}
+
           <label for="s1_e">Texto do primeiro Evento</label><br>
-          <textarea name="s1_e" id="s1_e" rows="2" cols="33" onKeyPress="soma1_e(this.value)" onKeyUp="soma1_e(this.value)"></textarea><br>
+          {!! Form::textarea('s1_e', null, array('rows'=>'2', 'cols'=>'33', 'onKeyPress'=>'soma1_e(this.value)',  'onKeyUp'=>'soma1_e(this.value)')) !!}
+          <br>
           Caracteres digitados:
           <input style="border:none" name="exibe1_e" type="text" class="formulario" value="0" size="2">
           Caracteres restantes:
           <input style="border:none" name="exibe21_e" type="text" class="formulario" size="2">
           <label for="hist1_e">História do Primeiro Evento</label><br>
-          <textarea name="hist1_e" id="hist1_e" rows="2" cols="33"></textarea><br>
+          {!! Form::textarea('hist1_e', null, array('rows'=>'2', 'cols'=>'33')) !!}
+          <br>
           <div class="col-md-3">
             <label for="ano1_e">Ano</label><br>
-            <input type="text" name="ano1_e" id="ano1_e" size="10" maxlength="4" placeholder="Ex.: 2017">
+            {!! Form::text('ano1_e', null, array('id' => 'ano1_e', 'size'=>'10', 'maxlength'=>'4', 'placeholder'=>'Ex.: 2017')) !!}
+
           </div>
           <div class="col-md-3 col-md-offset-1">
             <label for="diames1_e">Dia e mês</label><br>
-            <input type="text" name="diames1_e" id="diames1_e" size="10" maxlength="6" placeholder="Ex.: DEZ 10">
+            {!! Form::text('diames1_e', null, array('id' => 'diames1_e', 'size'=>'10', 'maxlength'=>'6', 'placeholder'=>'Ex.: DEZ 10')) !!}
+
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="form-group">
           <label for="f2_e">Foto do Segundo Evento</label>
-          <input type="file" name="f2_e" id="f2_e">
+          {!! Form::file('f2_e', null, array('id' => 'f2_e')) !!}
+
           <label for="t2_e">Título do segundo Evento</label><br>
-          <input type="text" name="t2_e" id="t2_e" size="33"><br>
+          {!! Form::text('t2_e', null, array('id' => 't2_e', 'size'=>'33', 'maxlength'=>'30')) !!}
+
           <label for="s2_e">Texto do segundo Evento</label><br>
-          <textarea name="s2_e" id="s2_e" rows="2" cols="33" onKeyPress="soma2_e(this.value)" onKeyUp="soma2_e(this.value)"></textarea><br>
+          {!! Form::textarea('s2_e', null, array('rows'=>'2', 'cols'=>'33', 'onKeyPress'=>'soma2_e(this.value)',  'onKeyUp'=>'soma2_e(this.value)')) !!}
+          <br>
           Caracteres digitados:
           <input style="border:none" name="exibe2_e" type="text" class="formulario" value="0" size="2">
           Caracteres restantes:
           <input style="border:none" name="exibe22_e" type="text" class="formulario" size="2">
           <label for="hist2_e">História do Segundo Evento</label><br>
-          <textarea name="hist2_e" id="hist2_e" rows="2" cols="33"></textarea><br>
+          {!! Form::textarea('hist2_e', null, array('rows'=>'2', 'cols'=>'33')) !!}
+          <br>
           <div class="col-md-3">
             <label for="ano2_e">Ano</label><br>
-            <input type="text" name="ano2_e" id="ano2_e" size="10" maxlength="4" placeholder="Ex.: 2017">
+            {!! Form::text('ano2_e', null, array('id' => 'ano2_e', 'size'=>'10', 'maxlength'=>'4', 'placeholder'=>'Ex.: 2017')) !!}
+
           </div>
           <div class="col-md-3 col-md-offset-1">
             <label for="diames2_e">Dia e mês</label><br>
-            <input type="text" name="diames2_e" id="diames2_e" size="10" maxlength="6" placeholder="Ex.: DEZ 10">
+            {!! Form::text('diames2_e', null, array('id' => 'diames2_e', 'size'=>'10', 'maxlength'=>'6', 'placeholder'=>'Ex.: DEZ 10')) !!}
+
           </div>
         </div>
       </div>
@@ -531,48 +569,60 @@ function mostra_tamanho4_b(){
       <div class="col-md-6">
         <div class="form-group">
           <label for="f3_e">Foto do Terceiro Evento</label>
-          <input type="file" name="f3_e" id="f3_e">
+          {!! Form::file('f3_e', null, array('id' => 'f3_e')) !!}
+
           <label for="t3_e">Título do terceiro Evento</label><br>
-          <input type="text" name="t3_e" id="t3_e" size="35"><br>
+          {!! Form::text('t3_e', null, array('id' => 't3_e', 'size'=>'33', 'maxlength'=>'30')) !!}
+
           <label for="s3_e">Texto do terceiro Evento</label><br>
-          <textarea name="s3_e" id="s3_e" rows="2" cols="33" onKeyPress="soma3_e(this.value)" onKeyUp="soma3_e(this.value)"></textarea><br>
+          {!! Form::textarea('s3_e', null, array('rows'=>'2', 'cols'=>'33', 'onKeyPress'=>'soma3_e(this.value)',  'onKeyUp'=>'soma3_e(this.value)')) !!}
+          <br>
           Caracteres digitados:
           <input style="border:none" name="exibe3_e" type="text" class="formulario" value="0" size="2">
           Caracteres restantes:
           <input style="border:none" name="exibe23_e" type="text" class="formulario" size="2">
           <label for="hist3_e">História do Terceiro Evento</label><br>
-          <textarea name="hist3_e" id="hist3_e" rows="2" cols="33"></textarea><br>
+          {!! Form::textarea('hist3_e', null, array('rows'=>'2', 'cols'=>'33')) !!}
+          <br>
           <div class="col-md-3">
             <label for="ano3_e">Ano</label><br>
-            <input type="text" name="ano3_e" id="ano3_e" size="10" maxlength="4" placeholder="Ex.: 2017">
+            {!! Form::text('ano3_e', null, array('id' => 'ano3_e', 'size'=>'10', 'maxlength'=>'4', 'placeholder'=>'Ex.: 2017')) !!}
+
           </div>
           <div class="col-md-3 col-md-offset-1">
             <label for="diames3_e">Dia e mês</label><br>
-            <input type="text" name="diames3_e" id="diames3_e" size="10" maxlength="6" placeholder="Ex.: DEZ 10">
+            {!! Form::text('diames3_e', null, array('id' => 'diames3_e', 'size'=>'10', 'maxlength'=>'6', 'placeholder'=>'Ex.: DEZ 10')) !!}
+
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="form-group">
           <label for="f4_e">Foto do Quarto Evento</label>
-          <input type="file" name="f4_e" id="f4_e">
+          {!! Form::file('f4_e', null, array('id' => 'f4_e')) !!}
+
           <label for="t4_e">Título do quarto Evento</label><br>
-          <input type="text" name="t4_e" id="t4_e" size="33"><br>
+          {!! Form::text('t4_e', null, array('id' => 't4_e', 'size'=>'33', 'maxlength'=>'30')) !!}
+
           <label for="s4_e">Texto do quarto Evento</label><br>
-          <textarea name="s4_e" id="s4_e" rows="2" cols="33" onKeyPress="soma4_e(this.value)" onKeyUp="soma4_e(this.value)"></textarea><br>
+          {!! Form::textarea('s4_e', null, array('rows'=>'2', 'cols'=>'33', 'onKeyPress'=>'soma4_e(this.value)',  'onKeyUp'=>'soma4_e(this.value)')) !!}
+          <br>
           Caracteres digitados:
           <input style="border:none" name="exibe4_e" type="text" class="formulario" value="0" size="2">
           Caracteres restantes:
-          <input style="border:none" name="exibe24_e" type="text" class="formulario" size="2"><br>
-          <label for="hist4_e">História do Quarto Evento</label><br>
-          <textarea name="hist4_e" id="hist4_e" rows="2" cols="33"></textarea><br>
+          <input style="border:none" name="exibe24_e" type="text" class="formulario" size="2">
+          <label for="hist4_e">História do quarto Evento</label><br>
+          {!! Form::textarea('hist4_e', null, array('rows'=>'2', 'cols'=>'33')) !!}
+          <br>
           <div class="col-md-3">
             <label for="ano4_e">Ano</label><br>
-            <input type="text" name="ano4_e" id="ano4_e" size="10" maxlength="4" placeholder="Ex.: 2017">
+            {!! Form::text('ano4_e', null, array('id' => 'ano4_e', 'size'=>'10', 'maxlength'=>'4', 'placeholder'=>'Ex.: 2017')) !!}
+
           </div>
           <div class="col-md-3 col-md-offset-1">
             <label for="diames4_e">Dia e mês</label><br>
-            <input type="text" name="diames4_e" id="diames4_e" size="10" maxlength="6" placeholder="Ex.: DEZ 10">
+            {!! Form::text('diames4_e', null, array('id' => 'diames4_e', 'size'=>'10', 'maxlength'=>'6', 'placeholder'=>'Ex.: DEZ 10')) !!}
+
           </div>
         </div>
       </div>
@@ -588,33 +638,41 @@ function mostra_tamanho4_b(){
       <div class="col-md-6">
         <div class="form-group">
           <label for="f1_b">Foto do Primeiro Blog</label>
-          <input type="file" name="f1_b" id="f1_b">
+          {!! Form::file('f1_b', null, array('id' => 'f1_b')) !!}
+
           <label for="t1_b">Título do primeiro Blog</label><br>
-          <input type="text" name="t1_b" id="t1_b" size="33" maxlength="30"><br>
+          {!! Form::text('t1_b', null, array('id' => 't1_b', 'size'=>'33', 'maxlength'=>'30')) !!}
+          <br>
           <label for="s1_b">Texto do primeiro Blog</label><br>
-          <textarea name="s1_b" id="s1_b" rows="2" cols="33" onKeyPress="soma1_b(this.value)" onKeyUp="soma1_b(this.value)"></textarea><br>
+          {!! Form::textarea('s1_b', null, array('rows'=>'2', 'cols'=>'33', 'onKeyPress'=>'soma1_b(this.value)',  'onKeyUp'=>'soma1_b(this.value)')) !!}
+          <br>
           Caracteres digitados:
           <input style="border:none" name="exibe1_b" type="text" class="formulario" value="0" size="2">
           Caracteres restantes:
           <input style="border:none" name="exibe21_b" type="text" class="formulario" size="2">
           <label for="hist1_b">História do Primeiro Blog</label><br>
-          <textarea name="hist1_b" id="hist1_b" rows="2" cols="33"></textarea><br>
+          {!! Form::textarea('hist1_b', null, array('rows'=>'2', 'cols'=>'33')) !!}
+          <br>
         </div>
       </div>
       <div class="col-md-6">
         <div class="form-group">
           <label for="f2_b">Foto do Segundo Blog</label>
-          <input type="file" name="f2_b" id="f2_b">
+          {!! Form::file('f2_b', null, array('id' => 'f2_b')) !!}
+
           <label for="t2_b">Título do segundo Blog</label><br>
-          <input type="text" name="t2_b" id="t2_b" size="33"><br>
+          {!! Form::text('t2_b', null, array('id' => 't2_b', 'size'=>'33', 'maxlength'=>'30')) !!}
+          <br>
           <label for="s2_b">Texto do segundo Blog</label><br>
-          <textarea name="s2_b" id="s2_b" rows="2" cols="33" onKeyPress="soma2_b(this.value)" onKeyUp="soma2_b(this.value)"></textarea><br>
+          {!! Form::textarea('s2_b', null, array('rows'=>'2', 'cols'=>'33', 'onKeyPress'=>'soma2_b(this.value)',  'onKeyUp'=>'soma2_b(this.value)')) !!}
+          <br>
           Caracteres digitados:
           <input style="border:none" name="exibe2_b" type="text" class="formulario" value="0" size="2">
           Caracteres restantes:
           <input style="border:none" name="exibe22_b" type="text" class="formulario" size="2">
           <label for="hist2_b">História do Segundo Blog</label><br>
-          <textarea name="hist2_b" id="hist2_b" rows="2" cols="33"></textarea><br>
+          {!! Form::textarea('hist2_b', null, array('rows'=>'2', 'cols'=>'33')) !!}
+          <br>
         </div>
       </div>
     </div>
@@ -626,33 +684,41 @@ function mostra_tamanho4_b(){
       <div class="col-md-6">
         <div class="form-group">
           <label for="f3_b">Foto do Terceiro Blog</label>
-          <input type="file" name="f3_b" id="f3_b">
+          {!! Form::file('f3_b', null, array('id' => 'f3_b')) !!}
+
           <label for="t3_b">Título do terceiro Blog</label><br>
-          <input type="text" name="t3_b" id="t3_b" size="35"><br>
+          {!! Form::text('t3_b', null, array('id' => 't3_b', 'size'=>'33', 'maxlength'=>'30')) !!}
+          <br>
           <label for="s3_b">Texto do terceiro Blog</label><br>
-          <textarea name="s3_b" id="s3_b" rows="2" cols="33" onKeyPress="soma3_b(this.value)" onKeyUp="soma3_b(this.value)"></textarea><br>
+          {!! Form::textarea('s3_b', null, array('rows'=>'2', 'cols'=>'33', 'onKeyPress'=>'soma3_b(this.value)',  'onKeyUp'=>'soma3_b(this.value)')) !!}
+          <br>
           Caracteres digitados:
           <input style="border:none" name="exibe3_b" type="text" class="formulario" value="0" size="2">
           Caracteres restantes:
-          <input style="border:none" name="exibe23_b" type="text" class="formulario" size="2"><br>
+          <input style="border:none" name="exibe23_b" type="text" class="formulario" size="2">
           <label for="hist3_b">História do Terceiro Blog</label><br>
-          <textarea name="hist3_b" id="hist3_b" rows="2" cols="33"></textarea><br>
+          {!! Form::textarea('hist3_b', null, array('rows'=>'2', 'cols'=>'33')) !!}
+          <br>
         </div>
       </div>
       <div class="col-md-6">
         <div class="form-group">
           <label for="f4_b">Foto do Quarto Blog</label>
-          <input type="file" name="f4_b" id="f4_b">
+          {!! Form::file('f4_b', null, array('id' => 'f4_b')) !!}
+
           <label for="t4_b">Título do quarto Blog</label><br>
-          <input type="text" name="t4_b" id="t4_b" size="33"><br>
+          {!! Form::text('t4_b', null, array('id' => 't4_b', 'size'=>'33', 'maxlength'=>'30')) !!}
+          <br>
           <label for="s4_b">Texto do quarto Blog</label><br>
-          <textarea name="s4_b" id="s4_b" rows="2" cols="33" onKeyPress="soma4_b(this.value)" onKeyUp="soma4_b(this.value)"></textarea><br>
+          {!! Form::textarea('s4_b', null, array('rows'=>'2', 'cols'=>'33', 'onKeyPress'=>'soma4_b(this.value)',  'onKeyUp'=>'soma4_b(this.value)')) !!}
+          <br>
           Caracteres digitados:
           <input style="border:none" name="exibe4_b" type="text" class="formulario" value="0" size="2">
           Caracteres restantes:
-          <input style="border:none" name="exibe24_b" type="text" class="formulario" size="2"><br>
+          <input style="border:none" name="exibe24_b" type="text" class="formulario" size="2">
           <label for="hist4_b">História do Quarto Blog</label><br>
-          <textarea name="hist4_b" id="hist4_b" rows="2" cols="33"></textarea><br>
+          {!! Form::textarea('hist4_b', null, array('rows'=>'2', 'cols'=>'33')) !!}
+          <br>
         </div>
       </div>
     </div>
@@ -665,7 +731,8 @@ function mostra_tamanho4_b(){
   // PLAYLIST PRINCIPAL
   <div class="form-group">
     <label for="url_down">Playlist principal</label><br>
-    <input type="text" name="url_down" placeholder="Colar o número da playlist do SoundClound" size="70">
+    {!! Form::text('url_down', null, array('id' => 'url_down', 'size'=>'70', 'placeholder'=>'Colar o número da playlist do SoundClound')) !!}
+    
   </div>
   <hr>
 </div>
