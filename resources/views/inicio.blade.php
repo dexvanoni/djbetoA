@@ -342,27 +342,34 @@
 
   <!--Contact Starts-->
   <div id="contact" class="spacer">
-  <div class="contactform center">
-  <h3><span class="glyphicon glyphicon-envelope"></span> Contact</h3>
+  <div class="contactform ">
+  <div class="col-sm-6 col-sm-offset-1">
+    <h3><span class="glyphicon glyphicon-envelope"></span> Contact</h3>
+  </div>
     <div class="row">
-        <div class="col-sm-6 col-sm-offset-3 ">
-        <h4>Get in touch or<br><b>Just say Hello!</b></h4>
+        <div class="col-sm-5 col-sm-offset-1 ">
+        <h4>Get in touch or<b> Just say Hello!</b></h4>
           <input type="text" placeholder="Name">
           <input type="text" placeholder="Email">
           <textarea rows="5" placeholder="Message"></textarea>
           <button class="btn btn-warning bgcolor">Send</button>
         </div>
+        <div class="col-sm-5 ">
+          <h4>Map!<b> Location!</b></h4>
+          <br>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d785.7505975984734!2d-54.59311968816546!3d-20.478299277010006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e8b486c7c097%3A0x74ea8b2c6cf398fd!2sTv.+do+Moinho%2C+26+-+Vila+Vilas+Boas%2C+Campo+Grande+-+MS%2C+79051-771!5e0!3m2!1spt-BR!2sbr!4v1500909818123" width="390" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
     </div>
-
 
   <!-- map -->
 <div class="row">
   <div class="col-md-12">
-    <div class="col-xs-2 col-xs-offset-1">
 <br><br>
-      <a href="https://www.instagram.com/djbetoandrade/" target="_blank"><img style="width: 40px; heigth: 40px" src="/insta.png" /></a>
+<div class="col-xs-3 col-xs-offset-5">
+      <a href="https://www.instagram.com/djbetoandrade/" target="_blank"><img style="margin-top: 2px; width: 42px; heigth: 42px" src="/insta.png" /></a>&nbsp
       <a href="https://www.facebook.com/djbeto.andrade/" target="_blank"><img style="width: 40px; heigth: 40px" src="/face.png" /></a>
-    </div>
+      <a href="#" data-toggle="modal" data-target="#whats"><img style="width: 56px; heigth: 56px" src="/ww.png"/></a>
+</div>
   </div>
 </div>
 
@@ -396,7 +403,7 @@
   <!-- Footer Starts -->
   <div id="footer">
   <div class="container">
-  Copyright 2017 DJ BETO ANDRADE | Development Denis Vanoni tel.(67)99122-4547 | <a href="{{ route('adm') }}">Administration</a>
+  Copyright 2017 DJ BETO ANDRADE | Development Denis Vanoni | <a href="{{ route('adm') }}">Administration</a>
   </div>
   </div>
   <!-- # Footer Ends -->
@@ -416,6 +423,21 @@
 
   <!--detalhes dos BLOGS-->
     <!--BLOG 1-->
+    <div class="modal fade" id="whats" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+              <div id="blog">
+              <h2>Phone</h2>
+              <small>Telefones para contato</small>
+                    <div class="col-lg-8 col-lg-offset-2">
+                      <p>(67) 99233 - 7771</p>
+                    </div>
+              </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
   <div class="modal fade" id="blogdetail1" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
