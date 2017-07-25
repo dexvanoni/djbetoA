@@ -1,4 +1,3 @@
-
 <script language="Javascript">
 var limite=600;
 
@@ -507,7 +506,7 @@ function mostra_tamanho4_b(){
 
           <label for="t1_e">Título do primeiro Evento</label><br>
           {!! Form::text('t1_e', null, array('id' => 't1_e', 'size'=>'33', 'maxlength'=>'30')) !!}
-
+          <br>
           <label for="s1_e">Texto do primeiro Evento</label><br>
           {!! Form::textarea('s1_e', null, array('rows'=>'2', 'cols'=>'33', 'onKeyPress'=>'soma1_e(this.value)',  'onKeyUp'=>'soma1_e(this.value)')) !!}
           <br>
@@ -537,7 +536,7 @@ function mostra_tamanho4_b(){
 
           <label for="t2_e">Título do segundo Evento</label><br>
           {!! Form::text('t2_e', null, array('id' => 't2_e', 'size'=>'33', 'maxlength'=>'30')) !!}
-
+          <br>
           <label for="s2_e">Texto do segundo Evento</label><br>
           {!! Form::textarea('s2_e', null, array('rows'=>'2', 'cols'=>'33', 'onKeyPress'=>'soma2_e(this.value)',  'onKeyUp'=>'soma2_e(this.value)')) !!}
           <br>
@@ -573,7 +572,7 @@ function mostra_tamanho4_b(){
 
           <label for="t3_e">Título do terceiro Evento</label><br>
           {!! Form::text('t3_e', null, array('id' => 't3_e', 'size'=>'33', 'maxlength'=>'30')) !!}
-
+          <br>
           <label for="s3_e">Texto do terceiro Evento</label><br>
           {!! Form::textarea('s3_e', null, array('rows'=>'2', 'cols'=>'33', 'onKeyPress'=>'soma3_e(this.value)',  'onKeyUp'=>'soma3_e(this.value)')) !!}
           <br>
@@ -603,7 +602,7 @@ function mostra_tamanho4_b(){
 
           <label for="t4_e">Título do quarto Evento</label><br>
           {!! Form::text('t4_e', null, array('id' => 't4_e', 'size'=>'33', 'maxlength'=>'30')) !!}
-
+          <br>
           <label for="s4_e">Texto do quarto Evento</label><br>
           {!! Form::textarea('s4_e', null, array('rows'=>'2', 'cols'=>'33', 'onKeyPress'=>'soma4_e(this.value)',  'onKeyUp'=>'soma4_e(this.value)')) !!}
           <br>
@@ -649,7 +648,7 @@ function mostra_tamanho4_b(){
           Caracteres digitados:
           <input style="border:none" name="exibe1_b" type="text" class="formulario" value="0" size="2">
           Caracteres restantes:
-          <input style="border:none" name="exibe21_b" type="text" class="formulario" size="2">
+          <input style="border:none" name="exibe21_b" type="text" class="formulario" size="2"><br>
           <label for="hist1_b">História do Primeiro Blog</label><br>
           {!! Form::textarea('hist1_b', null, array('rows'=>'2', 'cols'=>'33')) !!}
           <br>
@@ -669,7 +668,7 @@ function mostra_tamanho4_b(){
           Caracteres digitados:
           <input style="border:none" name="exibe2_b" type="text" class="formulario" value="0" size="2">
           Caracteres restantes:
-          <input style="border:none" name="exibe22_b" type="text" class="formulario" size="2">
+          <input style="border:none" name="exibe22_b" type="text" class="formulario" size="2"><br>
           <label for="hist2_b">História do Segundo Blog</label><br>
           {!! Form::textarea('hist2_b', null, array('rows'=>'2', 'cols'=>'33')) !!}
           <br>
@@ -695,7 +694,7 @@ function mostra_tamanho4_b(){
           Caracteres digitados:
           <input style="border:none" name="exibe3_b" type="text" class="formulario" value="0" size="2">
           Caracteres restantes:
-          <input style="border:none" name="exibe23_b" type="text" class="formulario" size="2">
+          <input style="border:none" name="exibe23_b" type="text" class="formulario" size="2"><br>
           <label for="hist3_b">História do Terceiro Blog</label><br>
           {!! Form::textarea('hist3_b', null, array('rows'=>'2', 'cols'=>'33')) !!}
           <br>
@@ -715,7 +714,7 @@ function mostra_tamanho4_b(){
           Caracteres digitados:
           <input style="border:none" name="exibe4_b" type="text" class="formulario" value="0" size="2">
           Caracteres restantes:
-          <input style="border:none" name="exibe24_b" type="text" class="formulario" size="2">
+          <input style="border:none" name="exibe24_b" type="text" class="formulario" size="2"><br>
           <label for="hist4_b">História do Quarto Blog</label><br>
           {!! Form::textarea('hist4_b', null, array('rows'=>'2', 'cols'=>'33')) !!}
           <br>
@@ -732,7 +731,7 @@ function mostra_tamanho4_b(){
   <div class="form-group">
     <label for="url_down">Playlist principal</label><br>
     {!! Form::text('url_down', null, array('id' => 'url_down', 'size'=>'70', 'placeholder'=>'Colar o número da playlist do SoundClound')) !!}
-    
+
   </div>
   <hr>
 </div>
