@@ -32,8 +32,22 @@ Route::get('volta',[
 ]);
 
 Route::get('/adm',['as' => 'adm', 'uses' => 'HomeController@index']);
+
 Route::group(['middleware' => 'auth'], function() {
 
   Route::resource('editar', 'EditionController', ['except' => 'show']);
 
+  Route::get('/lista', ['as' => 'lista',function () {
+      return view('lista', array('contatos' => App\Contato::all()));
+  }]);
+
+});
+
+Route::post('/enviar', function(Illuminate\Http\Request $request){
+  $contato = new App\Contato();
+  $contato->nome = $request->get('nome');
+  $contato->email = $request->get('email');
+  $contato->mensagem = $request->get('mensagem');
+  $contato->save();
+  echo "Sua mensagem foi enviada com suceddo! Código: " . $contato->id;
 });

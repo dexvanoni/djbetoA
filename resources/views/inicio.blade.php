@@ -349,10 +349,13 @@
     <div class="row">
         <div class="col-sm-5 col-sm-offset-1 ">
         <h4>Get in touch or<b> Just say Hello!</b></h4>
-          <input type="text" placeholder="Name">
-          <input type="text" placeholder="Email">
-          <textarea rows="5" placeholder="Message"></textarea>
-          <button class="btn btn-warning bgcolor">Send</button>
+          <form class="form-group" action="/enviar" method="post">
+            <input type="text" placeholder="Name" id="nome" name="nome">
+            <input type="email" placeholder="Email" id="email" name="email" required>
+            <textarea rows="5" placeholder="Message" id="mensagem" name="mensagem"></textarea>
+            <input type="hidden" name="_token" value="{{ csrf_token() }}"></input>
+            <button type="submit" class="btn btn-warning bgcolor">Send</button>
+          </form>
         </div>
         <div class="col-sm-5 ">
           <h4>Map!<b> Location!</b></h4>

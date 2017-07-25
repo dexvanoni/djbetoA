@@ -283,6 +283,7 @@ class ComposerStaticInit14fb30efcb0ffa89c1b8e627ddf9cb0a
 
     public static $classMap = array (
         'App\\Console\\Kernel' => __DIR__ . '/../..' . '/app/Console/Kernel.php',
+        'App\\Contato' => __DIR__ . '/../..' . '/app/Contato.php',
         'App\\Edition' => __DIR__ . '/../..' . '/app/Edition.php',
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Auth\\ForgotPasswordController' => __DIR__ . '/../..' . '/app/Http/Controllers/Auth/ForgotPasswordController.php',
@@ -328,6 +329,7 @@ class ComposerStaticInit14fb30efcb0ffa89c1b8e627ddf9cb0a
         'Collective\\Html\\HtmlBuilder' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlBuilder.php',
         'Collective\\Html\\HtmlFacade' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlFacade.php',
         'Collective\\Html\\HtmlServiceProvider' => __DIR__ . '/..' . '/laravelcollective/html/src/HtmlServiceProvider.php',
+        'CreateContatosTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_25_140850_create_contatos_table.php',
         'CreateEditionsTable' => __DIR__ . '/../..' . '/database/migrations/2017_07_14_145616_create_editions_table.php',
         'CreatePasswordResetsTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_100000_create_password_resets_table.php',
         'CreateUsersTable' => __DIR__ . '/../..' . '/database/migrations/2014_10_12_000000_create_users_table.php',

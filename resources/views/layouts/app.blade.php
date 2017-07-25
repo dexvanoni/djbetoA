@@ -10,90 +10,13 @@
 
   <title>{{ config('app.name', 'DJ Beto Andrade') }}</title>
 
-  <!-- Styles -->
+
+  <!--<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.css">-->
   <link href="/bst/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="/css/bootstrap.css" />
   <link href="/css/app.css" rel="stylesheet">
-  <script src="/bst/js/jquery-1.12.4.min.js"></script>
-  <script src="/bst/js/bootstrap.min.js"></script>
-
-  <!-- Scripts -->
-  <script>
-  window.Laravel = <?php echo json_encode([
-    'csrfToken' => csrf_token(),
-  ]); ?>
-  </script>
-  <script type="text/javascript">
-  $(document).ready(function(){
-    $('#botoes').show();
-    $('#aboutme').hide();
-    $('#settop').hide();
-    $('#albumrelease').hide();
-    $('#events').hide();
-    $('#blogs').hide();
-    $('#playlistdown').hide();
-    $('#bt_submit').hide();
-
-    $("#bt_aboutme").click(function(){
-      $('#aboutme').show();
-      $('#bt_submit').show();
-      $('#settop').hide();
-      $('#albumrelease').hide();
-      $('#events').hide();
-      $('#blogs').hide();
-      $('#playlistdown').hide();
-    });
-    $("#bt_settop").click(function(){
-      $('#aboutme').hide();
-      $('#settop').show();
-      $('#albumrelease').hide();
-      $('#events').hide();
-      $('#blogs').hide();
-      $('#playlistdown').hide();
-      $('#bt_submit').show();
-    });
-    $("#bt_albumrelease").click(function(){
-      $('#aboutme').hide();
-      $('#settop').hide();
-      $('#albumrelease').show();
-      $('#events').hide();
-      $('#blogs').hide();
-      $('#playlistdown').hide();
-      $('#bt_submit').show();
-    });
-    $("#bt_events").click(function(){
-      $('#aboutme').hide();
-      $('#settop').hide();
-      $('#albumrelease').hide();
-      $('#events').show();
-      $('#blogs').hide();
-      $('#playlistdown').hide();
-      $('#bt_submit').show();
-    });
-    $("#bt_blogs").click(function(){
-      $('#aboutme').hide();
-      $('#settop').hide();
-      $('#albumrelease').hide();
-      $('#events').hide();
-      $('#blogs').show();
-      $('#playlistdown').hide();
-      $('#bt_submit').show();
-    });
-    $("#bt_playlistdown").click(function(){
-      $('#aboutme').hide();
-      $('#settop').hide();
-      $('#albumrelease').hide();
-      $('#events').hide();
-      $('#blogs').hide();
-      $('#playlistdown').show();
-      $('#bt_submit').show();
-    });
-
-  });
-
-
-
-  </script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/jquery.dataTables.min.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.15/css/dataTables.bootstrap.min.css">
 </head>
 <body>
   <div id="app">
@@ -145,6 +68,10 @@
                     {{ csrf_field() }}
                   </form>
                 </li>
+                <li role="separator" class="divider"></li>
+                <li><a href="{{ route('editar.index') }}">Index</a></li>
+                <li><a href="{{ route('volta') }}">Seu site</a></li>
+                <li><a href="{{ route('lista') }}">Mensagens</a></li>
               </ul>
             </li>
           @endif
@@ -154,16 +81,6 @@
   </nav>
   <br>
   <div class="container">
-    <div class="row">
-      <div class="col-md-12">
-        <div class="col-md-2 col-md-offset-1">
-            <a href="{{ route('editar.index') }}" class="btn btn-danger"><span class="glyphicon glyphicon-cog"></span> Index</a><br><br>
-        </div>
-        <div class="col-md-2 col-md-offset-7">
-            <a href="{{ route('volta') }}" class="btn btn-danger"><span class="glyphicon glyphicon-headphones"></span> Site</a><br><br>
-        </div>
-      </div>
-    </div>
 
     <div class="row">
       <div class="col-md-12">
@@ -176,11 +93,107 @@
         </div>
       </div>
     </div>
+    <!--<div class="pull-right">
+      <div class="row">
+        <div class="col-md-12 col-md-offset-2">
+          <a href="{{ route('editar.index') }}" class="btn btn-info"><span class="glyphicon glyphicon-cog"></span> Index</a>
+          <a href="{{ route('volta') }}" class="btn btn-danger"><span class="glyphicon glyphicon-headphones"></span> Site</a>
+          <a title="Ver meus emails recebidos" href="{{ route('lista') }}" class="btn btn-success"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Mensagens</a><br><br>
+        </div>
+      </div>
+    </div>-->
   </div>
 </div>
 
+<script src="/bst/js/jquery-1.12.4.min.js"></script>
+<script src="/bst/js/bootstrap.min.js"></script>
 <!-- Scripts -->
-    <script src="/js/app.js"></script>
+<script src="/js/app.js"></script>
 <script src="/bst/js/bootstrap.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.15/js/jquery.dataTables.min.js"></script>
+<!-- Scripts -->
+<script>
+
+window.Laravel = <?php echo json_encode([
+  'csrfToken' => csrf_token(),
+]); ?>
+
+$(document).ready(function() {
+  $('#lista').DataTable( {
+    "language": {
+        "url": "/localisation/Portuguese-Brasil.json"
+      }
+    } );
+} );
+$(document).ready(function(){
+
+  $('#botoes').show();
+  $('#aboutme').hide();
+  $('#settop').hide();
+  $('#albumrelease').hide();
+  $('#events').hide();
+  $('#blogs').hide();
+  $('#playlistdown').hide();
+  $('#bt_submit').hide();
+
+  $("#bt_aboutme").click(function(){
+    $('#aboutme').show();
+    $('#bt_submit').show();
+    $('#settop').hide();
+    $('#albumrelease').hide();
+    $('#events').hide();
+    $('#blogs').hide();
+    $('#playlistdown').hide();
+  });
+  $("#bt_settop").click(function(){
+    $('#aboutme').hide();
+    $('#settop').show();
+    $('#albumrelease').hide();
+    $('#events').hide();
+    $('#blogs').hide();
+    $('#playlistdown').hide();
+    $('#bt_submit').show();
+  });
+  $("#bt_albumrelease").click(function(){
+    $('#aboutme').hide();
+    $('#settop').hide();
+    $('#albumrelease').show();
+    $('#events').hide();
+    $('#blogs').hide();
+    $('#playlistdown').hide();
+    $('#bt_submit').show();
+  });
+  $("#bt_events").click(function(){
+    $('#aboutme').hide();
+    $('#settop').hide();
+    $('#albumrelease').hide();
+    $('#events').show();
+    $('#blogs').hide();
+    $('#playlistdown').hide();
+    $('#bt_submit').show();
+  });
+  $("#bt_blogs").click(function(){
+    $('#aboutme').hide();
+    $('#settop').hide();
+    $('#albumrelease').hide();
+    $('#events').hide();
+    $('#blogs').show();
+    $('#playlistdown').hide();
+    $('#bt_submit').show();
+  });
+  $("#bt_playlistdown").click(function(){
+    $('#aboutme').hide();
+    $('#settop').hide();
+    $('#albumrelease').hide();
+    $('#events').hide();
+    $('#blogs').hide();
+    $('#playlistdown').show();
+    $('#bt_submit').show();
+  });
+
+});
+
+</script>
 </body>
 </html>
